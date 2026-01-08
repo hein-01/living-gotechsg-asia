@@ -10,6 +10,13 @@ const Index: React.FC = () => {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  const goToSlide = (index: number) => {
+    setCurrentSlide((index + heroSlides.length) % heroSlides.length);
+  };
+
+  const goToNext = () => goToSlide(currentSlide + 1);
+  const goToPrev = () => goToSlide(currentSlide - 1);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
@@ -75,12 +82,34 @@ const Index: React.FC = () => {
             ))}
           </div>
 
+          {/* Arrow controls */}
+          <button
+            type="button"
+            onClick={goToPrev}
+            className="hover-scale absolute left-4 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background/80 text-foreground shadow-md backdrop-blur-md"
+            aria-label="Previous slide"
+          >
+            <span className="material-symbols-outlined text-base">chevron_left</span>
+          </button>
+          <button
+            type="button"
+            onClick={goToNext}
+            className="hover-scale absolute right-4 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background/80 text-foreground shadow-md backdrop-blur-md"
+            aria-label="Next slide"
+          >
+            <span className="material-symbols-outlined text-base">chevron_right</span>
+          </button>
+
+          {/* Slide indicator pill */}
           <div className="absolute bottom-8 right-8 z-20">
             <div className="flex items-center gap-2 rounded-full border border-border bg-background/70 px-3 py-1.5 text-xs font-bold text-foreground shadow-lg backdrop-blur-md">
-              <span>{currentSlide + 1}/{heroSlides.length}</span>
+              <span>
+                {currentSlide + 1}/{heroSlides.length}
+              </span>
             </div>
           </div>
 
+          {/* Hero content */}
           <div className="relative z-10 flex max-w-[960px] flex-col items-center gap-6 text-center">
             <div className="animate-bounce-slow pointer-events-auto rounded-full border-2 border-primary-foreground/20 bg-accent px-6 py-2 text-accent-foreground shadow-lg">
               <span className="text-sm font-bold uppercase tracking-wide">Starts from $2,900 USD</span>
@@ -97,6 +126,21 @@ const Index: React.FC = () => {
               <button className="flex h-12 min-w-[160px] items-center justify-center rounded-lg bg-primary px-8 text-base font-bold text-primary-foreground shadow-lg transition-all hover:scale-105 hover:bg-primary/90">
                 <span className="truncate">View Our Models</span>
               </button>
+            </div>
+
+            {/* Dots */}
+            <div className="mt-6 flex items-center gap-2">
+              {heroSlides.map((_, index) => (
+                <button
+                  key={index}
+                  type="button"
+                  onClick={() => goToSlide(index)}
+                  className={`h-2.5 w-2.5 rounded-full border border-border transition-all ${
+                    currentSlide === index ? "bg-primary" : "bg-background/60 hover:bg-muted"
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
             </div>
           </div>
         </section>
