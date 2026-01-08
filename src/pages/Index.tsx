@@ -261,7 +261,7 @@ const Index: React.FC = () => {
                       </span>
                       <span className="text-xs font-medium text-muted-foreground sm:text-sm">USD</span>
                     </div>
-                    <button className="flex w-full items-center justify-center gap-2 rounded-sm border border-accent bg-accent py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90">
+                    <button className="flex w-full items-center justify-center gap-2 rounded-md border border-accent bg-accent py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90">
                       <span className="material-symbols-outlined text-[18px]">videocam</span>
                       <span>View 3d Video</span>
                     </button>
@@ -271,7 +271,7 @@ const Index: React.FC = () => {
                           href={buildWhatsAppUrl("The Solo")}
                           target="_blank"
                           rel="noreferrer"
-                          className="w-full rounded-sm border border-emerald-600 bg-emerald-600 py-3 text-sm font-medium text-emerald-50 transition-colors hover:bg-emerald-700"
+                          className="w-full rounded-md border border-emerald-600 bg-emerald-600 py-3 text-sm font-medium text-emerald-50 transition-colors hover:bg-emerald-700"
                         >
                           <div className="flex flex-col items-center gap-1 leading-snug">
                             <MessageCircle className="h-4 w-4" aria-hidden="true" />
@@ -283,7 +283,7 @@ const Index: React.FC = () => {
                           href={buildViberUrl("The Solo")}
                           target="_blank"
                           rel="noreferrer"
-                          className="w-full rounded-sm border border-purple-600 bg-purple-600 py-3 text-sm font-medium text-purple-50 transition-colors hover:bg-purple-700"
+                          className="w-full rounded-md border border-purple-600 bg-purple-600 py-3 text-sm font-medium text-purple-50 transition-colors hover:bg-purple-700"
                         >
                           <div className="flex flex-col items-center gap-1 leading-snug">
                             <PhoneCall className="h-4 w-4" aria-hidden="true" />
@@ -292,7 +292,7 @@ const Index: React.FC = () => {
                           </div>
                         </a>
                         <DialogTrigger asChild>
-                          <button className="w-full rounded-sm border border-primary bg-muted py-3 text-sm font-medium text-primary transition-colors hover:bg-muted/80">
+                          <button className="w-full rounded-md border border-primary bg-muted py-3 text-sm font-medium text-primary transition-colors hover:bg-muted/80">
                             Book Now
                           </button>
                         </DialogTrigger>
@@ -477,7 +477,7 @@ const Index: React.FC = () => {
                       </span>
                       <span className="text-xs font-medium text-muted-foreground sm:text-sm">USD</span>
                     </div>
-                    <button className="flex w-full items-center justify-center gap-2 rounded-sm border border-accent bg-accent py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90">
+                    <button className="flex w-full items-center justify-center gap-2 rounded-md border border-accent bg-accent py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90">
                       <span className="material-symbols-outlined text-[18px]">videocam</span>
                       <span>View 3d Video</span>
                     </button>
@@ -487,7 +487,7 @@ const Index: React.FC = () => {
                           href={buildWhatsAppUrl("The Couple")}
                           target="_blank"
                           rel="noreferrer"
-                          className="w-full rounded-sm border border-emerald-600 bg-emerald-600 py-3 text-sm font-medium text-emerald-50 transition-colors hover:bg-emerald-700"
+                          className="w-full rounded-md border border-emerald-600 bg-emerald-600 py-3 text-sm font-medium text-emerald-50 transition-colors hover:bg-emerald-700"
                         >
                           <div className="flex flex-col items-center gap-1 leading-snug">
                             <MessageCircle className="h-4 w-4" aria-hidden="true" />
@@ -499,7 +499,7 @@ const Index: React.FC = () => {
                           href={buildViberUrl("The Couple")}
                           target="_blank"
                           rel="noreferrer"
-                          className="w-full rounded-sm border border-purple-600 bg-purple-600 py-3 text-sm font-medium text-purple-50 transition-colors hover:bg-purple-700"
+                          className="w-full rounded-md border border-purple-600 bg-purple-600 py-3 text-sm font-medium text-purple-50 transition-colors hover:bg-purple-700"
                         >
                           <div className="flex flex-col items-center gap-1 leading-snug">
                             <PhoneCall className="h-4 w-4" aria-hidden="true" />
@@ -508,7 +508,7 @@ const Index: React.FC = () => {
                           </div>
                         </a>
                         <DialogTrigger asChild>
-                          <button className="w-full rounded-sm border border-primary bg-muted py-3 text-sm font-medium text-primary transition-colors hover:bg-muted/80">
+                          <button className="w-full rounded-md border border-primary bg-muted py-3 text-sm font-medium text-primary transition-colors hover:bg-muted/80">
                             Book Now
                           </button>
                         </DialogTrigger>
@@ -690,7 +690,7 @@ const Index: React.FC = () => {
                       </span>
                       <span className="text-xs font-medium text-muted-foreground sm:text-sm">USD</span>
                     </div>
-                    <button className="flex w-full items-center justify-center gap-2 rounded-sm border border-accent bg-accent py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90">
+                    <button className="flex w-full items-center justify-center gap-2 rounded-md border border-accent bg-accent py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90">
                       <span className="material-symbols-outlined text-[18px]">videocam</span>
                       <span>View 3d Video</span>
                     </button>
@@ -700,7 +700,7 @@ const Index: React.FC = () => {
                           href={buildWhatsAppUrl("The Family")}
                           target="_blank"
                           rel="noreferrer"
-                          className="w-full rounded-sm border border-emerald-600 bg-emerald-600 py-3 text-sm font-medium text-emerald-50 transition-colors hover:bg-emerald-700"
+                          className="w-full rounded-md border border-emerald-600 bg-emerald-600 py-3 text-sm font-medium text-emerald-50 transition-colors hover:bg-emerald-700"
                         >
                           <div className="flex flex-col items-center gap-1 leading-snug">
                             <MessageCircle className="h-4 w-4" aria-hidden="true" />
@@ -712,7 +712,7 @@ const Index: React.FC = () => {
                           href={buildViberUrl("The Family")}
                           target="_blank"
                           rel="noreferrer"
-                          className="w-full rounded-sm border border-purple-600 bg-purple-600 py-3 text-sm font-medium text-purple-50 transition-colors hover:bg-purple-700"
+                          className="w-full rounded-md border border-purple-600 bg-purple-600 py-3 text-sm font-medium text-purple-50 transition-colors hover:bg-purple-700"
                         >
                           <div className="flex flex-col items-center gap-1 leading-snug">
                             <PhoneCall className="h-4 w-4" aria-hidden="true" />
@@ -721,7 +721,7 @@ const Index: React.FC = () => {
                           </div>
                         </a>
                         <DialogTrigger asChild>
-                          <button className="w-full rounded-sm border border-primary bg-muted py-3 text-sm font-medium text-primary transition-colors hover:bg-muted/80">
+                          <button className="w-full rounded-md border border-primary bg-muted py-3 text-sm font-medium text-primary transition-colors hover:bg-muted/80">
                             Book Now
                           </button>
                         </DialogTrigger>
