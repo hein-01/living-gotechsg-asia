@@ -11,12 +11,17 @@ const Index: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const WHATSAPP_NUMBER = "6593805126"; // GoTech WhatsApp
+  const VIBER_NUMBER = "+959951343605"; // GoTech Viber
 
   const buildWhatsAppUrl = (modelName: string) => {
     const message = `Hi, I am interested in booking the "${modelName}" modular unit.`;
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
   };
 
+  const buildViberUrl = (modelName: string) => {
+    const message = `Hi, I am interested in booking the "${modelName}" modular unit.`;
+    return `viber://chat?number=${encodeURIComponent(VIBER_NUMBER)}&text=${encodeURIComponent(message)}`;
+  };
   const goToSlide = (index: number) => {
     setCurrentSlide((index + heroSlides.length) % heroSlides.length);
   };
@@ -252,14 +257,24 @@ const Index: React.FC = () => {
                       <span className="material-symbols-outlined text-[20px]">videocam</span>
                       View 3D Video
                     </button>
-                    <a
-                      href={buildWhatsAppUrl("The Solo")}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="w-full rounded-lg bg-foreground py-3 text-center text-sm font-bold text-background transition-colors hover:bg-primary"
-                    >
-                      Book Now
-                    </a>
+                    <div className="flex flex-col gap-2 sm:flex-row">
+                      <a
+                        href={buildWhatsAppUrl("The Solo")}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex-1 rounded-lg bg-foreground py-3 text-center text-sm font-bold text-background transition-colors hover:bg-primary"
+                      >
+                        Book on WhatsApp
+                      </a>
+                      <a
+                        href={buildViberUrl("The Solo")}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex-1 rounded-lg border border-primary/60 bg-background py-3 text-center text-sm font-bold text-primary transition-colors hover:bg-primary/5"
+                      >
+                        Book on Viber
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -355,14 +370,24 @@ const Index: React.FC = () => {
                       <span className="material-symbols-outlined text-[20px]">videocam</span>
                       View 3D Video
                     </button>
-                    <a
-                      href={buildWhatsAppUrl("The Couple")}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="w-full rounded-lg bg-foreground py-3 text-center text-sm font-bold text-background shadow-md transition-colors hover:bg-primary"
-                    >
-                      Book Now
-                    </a>
+                    <div className="flex flex-col gap-2 sm:flex-row">
+                      <a
+                        href={buildWhatsAppUrl("The Couple")}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex-1 rounded-lg bg-foreground py-3 text-center text-sm font-bold text-background shadow-md transition-colors hover:bg-primary"
+                      >
+                        Book on WhatsApp
+                      </a>
+                      <a
+                        href={buildViberUrl("The Couple")}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex-1 rounded-lg border border-primary/60 bg-background py-3 text-center text-sm font-bold text-primary transition-colors hover:bg-primary/5"
+                      >
+                        Book on Viber
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -455,14 +480,24 @@ const Index: React.FC = () => {
                       <span className="material-symbols-outlined text-[20px]">videocam</span>
                       View 3D Video
                     </button>
-                    <a
-                      href={buildWhatsAppUrl("The Family")}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="w-full rounded-lg bg-foreground py-3 text-center text-sm font-bold text-background transition-colors hover:bg-primary"
-                    >
-                      Book Now
-                    </a>
+                    <div className="flex flex-col gap-2 sm:flex-row">
+                      <a
+                        href={buildWhatsAppUrl("The Family")}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex-1 rounded-lg bg-foreground py-3 text-center text-sm font-bold text-background transition-colors hover:bg-primary"
+                      >
+                        Book on WhatsApp
+                      </a>
+                      <a
+                        href={buildViberUrl("The Family")}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex-1 rounded-lg border border-primary/60 bg-background py-3 text-center text-sm font-bold text-primary transition-colors hover:bg-primary/5"
+                      >
+                        Book on Viber
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
