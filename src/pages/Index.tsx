@@ -101,18 +101,18 @@ const Index: React.FC = () => {
           <button
             type="button"
             onClick={goToPrev}
-            className="hover-scale absolute left-4 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background/80 text-foreground shadow-md backdrop-blur-md"
+            className="hover-scale absolute left-3 top-1/2 z-20 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background/80 text-foreground shadow-md backdrop-blur-md sm:left-4 sm:h-10 sm:w-10"
             aria-label="Previous slide"
           >
-            <span className="material-symbols-outlined text-base">chevron_left</span>
+            <span className="material-symbols-outlined text-sm sm:text-base">chevron_left</span>
           </button>
           <button
             type="button"
             onClick={goToNext}
-            className="hover-scale absolute right-4 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background/80 text-foreground shadow-md backdrop-blur-md"
+            className="hover-scale absolute right-3 top-1/2 z-20 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background/80 text-foreground shadow-md backdrop-blur-md sm:right-4 sm:h-10 sm:w-10"
             aria-label="Next slide"
           >
-            <span className="material-symbols-outlined text-base">chevron_right</span>
+            <span className="material-symbols-outlined text-sm sm:text-base">chevron_right</span>
           </button>
 
           {/* Slide indicator pill */}
@@ -129,16 +129,16 @@ const Index: React.FC = () => {
             <div className="animate-bounce-slow pointer-events-auto rounded-full border-2 border-primary-foreground/20 bg-accent px-6 py-2 text-accent-foreground shadow-lg">
               <span className="text-sm font-bold uppercase tracking-wide">Starts from $2,900 USD</span>
             </div>
-            <h1 className="text-balance text-5xl font-black leading-tight tracking-[-0.033em] text-primary-foreground drop-shadow-md md:text-6xl">
+            <h1 className="text-balance text-4xl font-black leading-tight tracking-[-0.033em] text-primary-foreground drop-shadow-md sm:text-5xl md:text-6xl">
               Affordable Smart Homes.
               <br />
               Simply Better.
             </h1>
-            <h2 className="max-w-2xl text-balance text-lg font-normal leading-relaxed text-primary-foreground/90 drop-shadow-sm md:text-xl">
+            <h2 className="max-w-2xl text-balance text-base font-normal leading-relaxed text-primary-foreground/90 drop-shadow-sm sm:text-lg md:text-xl">
               Ready-made modular housing solutions built with Light Steel Frame technology. Faster, stronger, and cooler than shipping containers.
             </h2>
             <div className="pt-4">
-              <button className="flex h-12 min-w-[160px] items-center justify-center rounded-lg bg-primary px-8 text-base font-bold text-primary-foreground shadow-lg transition-all hover:scale-105 hover:bg-primary/90">
+              <button className="flex h-12 w-full items-center justify-center rounded-lg bg-primary px-8 text-base font-bold text-primary-foreground shadow-lg transition-all hover:scale-105 hover:bg-primary/90 sm:w-auto sm:min-w-[160px]">
                 <span className="truncate">View Our Models</span>
               </button>
             </div>
@@ -173,7 +173,7 @@ const Index: React.FC = () => {
             </div>
 
             {/* Cards grid */}
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-6 sm:gap-7 md:grid-cols-2 lg:grid-cols-3">
               {/* The Solo card */}
               <div className="group flex flex-col overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-all duration-300 hover:shadow-xl">
                 <div className="relative h-48 w-full bg-muted">
@@ -193,13 +193,15 @@ const Index: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="flex flex-1 flex-col gap-4 p-6">
+                <div className="flex flex-1 flex-col gap-4 p-4 sm:p-5 md:p-6">
                   <div className="flex items-start justify-between">
                     <div>
-                      <h3 className="text-xl font-bold text-foreground">The Solo</h3>
-                      <p className="text-sm text-muted-foreground">Studio Unit</p>
+                      <h3 className="text-lg font-bold text-foreground sm:text-xl">
+                        The Solo
+                      </h3>
+                      <p className="text-xs text-muted-foreground sm:text-sm">Studio Unit</p>
                     </div>
-                    <span className="rounded bg-primary/10 px-2 py-1 text-xs font-bold text-primary">
+                    <span className="rounded bg-primary/10 px-2 py-1 text-[11px] font-bold text-primary sm:text-xs">
                       Best Seller
                     </span>
                   </div>
@@ -253,8 +255,10 @@ const Index: React.FC = () => {
 
                   <div className="mt-auto flex flex-col gap-3 pt-4">
                     <div className="flex items-baseline gap-1">
-                      <span className="text-3xl font-black text-accent">$4,900</span>
-                      <span className="text-sm font-medium text-muted-foreground">USD</span>
+                      <span className="text-2xl font-black text-accent sm:text-3xl">
+                        $4,900
+                      </span>
+                      <span className="text-xs font-medium text-muted-foreground sm:text-sm">USD</span>
                     </div>
                     <button className="flex w-full items-center justify-center gap-2 rounded-lg bg-accent py-3 text-sm font-bold text-accent-foreground shadow-md transition-colors hover:bg-accent/90">
                       <span className="material-symbols-outlined text-[20px]">videocam</span>
@@ -407,11 +411,11 @@ const Index: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="flex flex-1 flex-col gap-4 p-6">
+                <div className="flex flex-1 flex-col gap-4 p-4 sm:p-5 md:p-6">
                   <div className="flex items-start justify-between">
                     <div>
-                      <h3 className="text-xl font-bold text-foreground">The Couple</h3>
-                      <p className="text-sm text-muted-foreground">Executive Suite</p>
+                      <h3 className="text-lg font-bold text-foreground sm:text-xl">The Couple</h3>
+                      <p className="text-xs text-muted-foreground sm:text-sm">Executive Suite</p>
                     </div>
                   </div>
 
@@ -471,8 +475,10 @@ const Index: React.FC = () => {
 
                   <div className="mt-auto flex flex-col gap-3 pt-4">
                     <div className="flex items-baseline gap-1">
-                      <span className="text-3xl font-black text-accent">$7,500</span>
-                      <span className="text-sm font-medium text-muted-foreground">USD</span>
+                      <span className="text-2xl font-black text-accent sm:text-3xl">
+                        $7,500
+                      </span>
+                      <span className="text-xs font-medium text-muted-foreground sm:text-sm">USD</span>
                     </div>
                     <button className="flex w-full items-center justify-center gap-2 rounded-lg bg-accent py-3 text-sm font-bold text-accent-foreground shadow-md transition-colors hover:bg-accent/90">
                       <span className="material-symbols-outlined text-[20px]">videocam</span>
@@ -622,11 +628,11 @@ const Index: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="flex flex-1 flex-col gap-4 p-6">
+                <div className="flex flex-1 flex-col gap-4 p-4 sm:p-5 md:p-6">
                   <div className="flex items-start justify-between">
                     <div>
-                      <h3 className="text-xl font-bold text-foreground">The Family</h3>
-                      <p className="text-sm text-muted-foreground">Double Unit</p>
+                      <h3 className="text-lg font-bold text-foreground sm:text-xl">The Family</h3>
+                      <p className="text-xs text-muted-foreground sm:text-sm">Double Unit</p>
                     </div>
                   </div>
 
@@ -686,8 +692,10 @@ const Index: React.FC = () => {
 
                   <div className="mt-auto flex flex-col gap-3 pt-4">
                     <div className="flex items-baseline gap-1">
-                      <span className="text-3xl font-black text-accent">$12,000</span>
-                      <span className="text-sm font-medium text-muted-foreground">USD</span>
+                      <span className="text-2xl font-black text-accent sm:text-3xl">
+                        $12,000
+                      </span>
+                      <span className="text-xs font-medium text-muted-foreground sm:text-sm">USD</span>
                     </div>
                     <button className="flex w-full items-center justify-center gap-2 rounded-lg bg-accent py-3 text-sm font-bold text-accent-foreground shadow-md transition-colors hover:bg-accent/90">
                       <span className="material-symbols-outlined text-[20px]">videocam</span>
