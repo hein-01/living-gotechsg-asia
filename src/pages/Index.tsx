@@ -261,14 +261,15 @@ const Index: React.FC = () => {
                       View 3D Video
                     </button>
                     <Dialog>
-                      <div className="flex flex-col gap-2 sm:flex-row">
+                      <div className="flex flex-col gap-2">
                         <a
                           href={buildWhatsAppUrl("The Solo")}
                           target="_blank"
                           rel="noreferrer"
                           className="flex-1 rounded-lg bg-foreground py-3 text-center text-sm font-bold text-background transition-colors hover:bg-primary"
                         >
-                          WhatsApp
+                          <span className="block text-sm font-bold">WhatsApp</span>
+                          <span className="mt-0.5 block text-xs font-normal opacity-80">+65 93805126</span>
                         </a>
                         <a
                           href={buildViberUrl("The Solo")}
@@ -276,7 +277,8 @@ const Index: React.FC = () => {
                           rel="noreferrer"
                           className="flex-1 rounded-lg border border-primary/60 bg-background py-3 text-center text-sm font-bold text-primary transition-colors hover:bg-primary/5"
                         >
-                          Viber
+                          <span className="block text-sm font-bold">Viber</span>
+                          <span className="mt-0.5 block text-xs font-normal opacity-80">+95 9951343605</span>
                         </a>
                       </div>
                       <DialogTrigger asChild>
@@ -467,14 +469,15 @@ const Index: React.FC = () => {
                       View 3D Video
                     </button>
                     <Dialog>
-                      <div className="flex flex-col gap-2 sm:flex-row">
+                      <div className="flex flex-col gap-2">
                         <a
                           href={buildWhatsAppUrl("The Couple")}
                           target="_blank"
                           rel="noreferrer"
                           className="flex-1 rounded-lg bg-foreground py-3 text-center text-sm font-bold text-background shadow-md transition-colors hover:bg-primary"
                         >
-                          WhatsApp
+                          <span className="block text-sm font-bold">WhatsApp</span>
+                          <span className="mt-0.5 block text-xs font-normal opacity-80">+65 93805126</span>
                         </a>
                         <a
                           href={buildViberUrl("The Couple")}
@@ -482,7 +485,8 @@ const Index: React.FC = () => {
                           rel="noreferrer"
                           className="flex-1 rounded-lg border border-primary/60 bg-background py-3 text-center text-sm font-bold text-primary transition-colors hover:bg-primary/5"
                         >
-                          Viber
+                          <span className="block text-sm font-bold">Viber</span>
+                          <span className="mt-0.5 block text-xs font-normal opacity-80">+95 9951343605</span>
                         </a>
                       </div>
                       <DialogTrigger asChild>
@@ -670,14 +674,15 @@ const Index: React.FC = () => {
                       View 3D Video
                     </button>
                     <Dialog>
-                      <div className="flex flex-col gap-2 sm:flex-row">
+                     <div className="flex flex-col gap-2">
                         <a
                           href={buildWhatsAppUrl("The Family")}
                           target="_blank"
                           rel="noreferrer"
                           className="flex-1 rounded-lg bg-foreground py-3 text-center text-sm font-bold text-background transition-colors hover:bg-primary"
                         >
-                          WhatsApp
+                          <span className="block text-sm font-bold">WhatsApp</span>
+                          <span className="mt-0.5 block text-xs font-normal opacity-80">+65 93805126</span>
                         </a>
                         <a
                           href={buildViberUrl("The Family")}
@@ -685,7 +690,8 @@ const Index: React.FC = () => {
                           rel="noreferrer"
                           className="flex-1 rounded-lg border border-primary/60 bg-background py-3 text-center text-sm font-bold text-primary transition-colors hover:bg-primary/5"
                         >
-                          Viber
+                          <span className="block text-sm font-bold">Viber</span>
+                          <span className="mt-0.5 block text-xs font-normal opacity-80">+95 9951343605</span>
                         </a>
                       </div>
                       <DialogTrigger asChild>
