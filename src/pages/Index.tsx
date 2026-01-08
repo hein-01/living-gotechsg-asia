@@ -280,7 +280,7 @@ const Index: React.FC = () => {
                           href={buildViberUrl("The Solo")}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover-scale flex-1 rounded-xl border border-accent/60 bg-accent/5 px-4 py-3 text-sm font-semibold text-accent-foreground shadow-sm transition-colors hover:bg-accent/10"
+                          className="hover-scale flex-1 rounded-xl border border-accent/60 bg-background px-4 py-3 text-sm font-semibold text-accent shadow-sm transition-colors hover:bg-accent/5"
                         >
                           <div className="flex items-center justify-between gap-3">
                             <div className="flex items-center gap-2">
@@ -498,7 +498,7 @@ const Index: React.FC = () => {
                           href={buildViberUrl("The Couple")}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover-scale flex-1 rounded-xl border border-accent/60 bg-accent/5 px-4 py-3 text-sm font-semibold text-accent-foreground shadow-sm transition-colors hover:bg-accent/10"
+                          className="hover-scale flex-1 rounded-xl border border-accent/60 bg-background px-4 py-3 text-sm font-semibold text-accent shadow-sm transition-colors hover:bg-accent/5"
                         >
                           <div className="flex items-center justify-between gap-3">
                             <div className="flex items-center gap-2">
@@ -713,7 +713,7 @@ const Index: React.FC = () => {
                           href={buildViberUrl("The Family")}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover-scale flex-1 rounded-xl border border-accent/60 bg-accent/5 px-4 py-3 text-sm font-semibold text-accent-foreground shadow-sm transition-colors hover:bg-accent/10"
+                          className="hover-scale flex-1 rounded-xl border border-accent/60 bg-background px-4 py-3 text-sm font-semibold text-accent shadow-sm transition-colors hover:bg-accent/5"
                         >
                           <div className="flex items-center justify-between gap-3">
                             <div className="flex items-center gap-2">
