@@ -260,7 +260,7 @@ const Index: React.FC = () => {
                       </span>
                       <span className="text-xs font-medium text-muted-foreground sm:text-sm">USD</span>
                     </div>
-                    <button className="w-full border border-accent bg-accent py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90">
+                    <button className="w-full rounded-sm border border-accent bg-accent py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90">
                       View 3d Video
                     </button>
                     <Dialog>
@@ -269,7 +269,7 @@ const Index: React.FC = () => {
                           href={buildWhatsAppUrl("The Solo")}
                           target="_blank"
                           rel="noreferrer"
-                          className="w-full border border-primary bg-primary py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+                          className="w-full rounded-sm border border-primary bg-primary py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
                         >
                           <div className="flex flex-col items-center leading-snug">
                             <span>Whatsapp</span>
@@ -280,7 +280,7 @@ const Index: React.FC = () => {
                           href={buildViberUrl("The Solo")}
                           target="_blank"
                           rel="noreferrer"
-                          className="w-full border border-secondary bg-secondary py-3 text-sm font-medium text-secondary-foreground transition-colors hover:bg-secondary/90"
+                          className="w-full rounded-sm border border-secondary bg-secondary py-3 text-sm font-medium text-secondary-foreground transition-colors hover:bg-secondary/90"
                         >
                           <div className="flex flex-col items-center leading-snug">
                             <span>Viber</span>
@@ -288,7 +288,7 @@ const Index: React.FC = () => {
                           </div>
                         </a>
                         <DialogTrigger asChild>
-                          <button className="w-full border border-muted bg-muted py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted/80">
+                          <button className="w-full rounded-sm border border-primary bg-muted py-3 text-sm font-medium text-primary transition-colors hover:bg-muted/80">
                             Book Now
                           </button>
                         </DialogTrigger>
@@ -473,7 +473,7 @@ const Index: React.FC = () => {
                       </span>
                       <span className="text-xs font-medium text-muted-foreground sm:text-sm">USD</span>
                     </div>
-                    <button className="w-full border border-accent bg-accent py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90">
+                    <button className="w-full rounded-sm border border-accent bg-accent py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90">
                       View 3d Video
                     </button>
                     <Dialog>
@@ -482,7 +482,7 @@ const Index: React.FC = () => {
                           href={buildWhatsAppUrl("The Couple")}
                           target="_blank"
                           rel="noreferrer"
-                          className="w-full border border-primary bg-primary py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+                          className="w-full rounded-sm border border-primary bg-primary py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
                         >
                           <div className="flex flex-col items-center leading-snug">
                             <span>Whatsapp</span>
@@ -493,7 +493,7 @@ const Index: React.FC = () => {
                           href={buildViberUrl("The Couple")}
                           target="_blank"
                           rel="noreferrer"
-                          className="w-full border border-secondary bg-secondary py-3 text-sm font-medium text-secondary-foreground transition-colors hover:bg-secondary/90"
+                          className="w-full rounded-sm border border-secondary bg-secondary py-3 text-sm font-medium text-secondary-foreground transition-colors hover:bg-secondary/90"
                         >
                           <div className="flex flex-col items-center leading-snug">
                             <span>Viber</span>
@@ -501,7 +501,7 @@ const Index: React.FC = () => {
                           </div>
                         </a>
                         <DialogTrigger asChild>
-                          <button className="w-full border border-muted bg-muted py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted/80">
+                          <button className="w-full rounded-sm border border-primary bg-muted py-3 text-sm font-medium text-primary transition-colors hover:bg-muted/80">
                             Book Now
                           </button>
                         </DialogTrigger>
@@ -683,7 +683,7 @@ const Index: React.FC = () => {
                       </span>
                       <span className="text-xs font-medium text-muted-foreground sm:text-sm">USD</span>
                     </div>
-                    <button className="w-full border border-accent bg-accent py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90">
+                    <button className="w-full rounded-sm border border-accent bg-accent py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90">
                       View 3d Video
                     </button>
                     <Dialog>
@@ -692,7 +692,7 @@ const Index: React.FC = () => {
                           href={buildWhatsAppUrl("The Family")}
                           target="_blank"
                           rel="noreferrer"
-                          className="w-full border border-primary bg-primary py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+                          className="w-full rounded-sm border border-primary bg-primary py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
                         >
                           <div className="flex flex-col items-center leading-snug">
                             <span>Whatsapp</span>
@@ -703,7 +703,7 @@ const Index: React.FC = () => {
                           href={buildViberUrl("The Family")}
                           target="_blank"
                           rel="noreferrer"
-                          className="w-full border border-secondary bg-secondary py-3 text-sm font-medium text-secondary-foreground transition-colors hover:bg-secondary/90"
+                          className="w-full rounded-sm border border-secondary bg-secondary py-3 text-sm font-medium text-secondary-foreground transition-colors hover:bg-secondary/90"
                         >
                           <div className="flex flex-col items-center leading-snug">
                             <span>Viber</span>
@@ -711,7 +711,7 @@ const Index: React.FC = () => {
                           </div>
                         </a>
                         <DialogTrigger asChild>
-                          <button className="w-full border border-muted bg-muted py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted/80">
+                          <button className="w-full rounded-sm border border-primary bg-muted py-3 text-sm font-medium text-primary transition-colors hover:bg-muted/80">
                             Book Now
                           </button>
                         </DialogTrigger>
