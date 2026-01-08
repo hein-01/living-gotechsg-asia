@@ -933,7 +933,7 @@ const Index: React.FC = () => {
         </section>
 
         {/* Why Choose Section */}
-        <section className="bg-card px-4 py-20 md:px-20 lg:px-40">
+        <section className="bg-card px-4 pt-8 pb-20 md:px-20 lg:px-40 md:pt-20">
           <div className="mx-auto max-w-[1100px]">
             <div className="flex flex-col items-center gap-12 md:flex-row">
               <div className="md:w-1/2">
