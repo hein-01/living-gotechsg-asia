@@ -5,7 +5,7 @@ import HeroPromo from "@/assets/hero-promo.png";
 const Index: React.FC = () => {
   const heroSlides = [
     "linear-gradient(rgba(14,23,42,0.4), rgba(14,23,42,0.6)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDGzVrIT2zYNe521vUeyB5n3Uf-IneUofyQNxOCovrwF7iRIvs6gNw7KCM-Jon7ebxcm-L2-ea71w9jkdhYOh-Brhotia0thZszvqPL5HAP2CSwS6oC_jryxNmg2z2nAwoj4dvvD8GsPq7U6i3EDkldwqIiXYJvtm11mEKJVjmXIlBme6zUf8s1U5Q2Ko-Bp-13ALgjI10zhwJdDpa_nxaqA1fuCoThUavOgqO8AiV-kEVlkJYzIO-6J46sZZ5ct5YgtOZQgVqzGuj6')",
-    `linear-gradient(rgba(14,23,42,0.5), rgba(14,23,42,0.7)), url(${HeroPromo})`,
+    "linear-gradient(rgba(14,23,42,0.4), rgba(14,23,42,0.6)), url('/placeholder.svg')",
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
