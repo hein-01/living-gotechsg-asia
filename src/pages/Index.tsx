@@ -172,7 +172,7 @@ const Index: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="flex flex-col gap-2 border-t border-border/70 pt-2">
+                  <div className="flex flex-col gap-2 pt-2">
                     <p className="text-xs font-bold text-foreground">Specifications</p>
                     <div className="mb-2 grid grid-cols-3 gap-2 text-center text-[10px] text-muted-foreground md:text-xs">
                       {["Height", "Width", "Depth"].map((label, idx) => <div key={label} className="rounded border border-border bg-muted p-1">
