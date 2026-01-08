@@ -1,4 +1,5 @@
 import React from "react";
+import GoTechLogo from "@/assets/gotech-logo.png";
 
 const Index: React.FC = () => {
   return (
@@ -8,10 +9,7 @@ const Index: React.FC = () => {
         {/* Sticky Header */}
         <header className="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-border bg-card/90 px-6 py-4 shadow-sm backdrop-blur-md lg:px-20">
           <div className="flex items-center gap-4 text-foreground">
-            <div className="flex size-8 items-center justify-center text-primary">
-              <span className="material-symbols-outlined text-3xl">home_work</span>
-            </div>
-            <h2 className="text-xl font-bold leading-tight tracking-tight">GoTech Living</h2>
+            <img src={GoTechLogo} alt="GoTech Living logo" className="h-8 w-auto" />
           </div>
 
           {/* Desktop Navigation */}
