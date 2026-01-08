@@ -8,8 +8,12 @@ const Index: React.FC = () => {
       <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
         {/* Sticky Header */}
         <header className="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-border bg-card/90 px-6 py-4 shadow-sm backdrop-blur-md lg:px-20">
-          <div className="flex items-center gap-4 text-foreground">
-            <img src={GoTechLogo} alt="GoTech Living logo" className="h-8 w-auto" />
+          <div className="flex items-center gap-5 text-foreground">
+            <img
+              src={GoTechLogo}
+              alt="GoTech Living logo"
+              className="h-10 w-auto object-contain md:h-12"
+            />
           </div>
 
           {/* Desktop Navigation */}
