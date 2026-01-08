@@ -890,11 +890,11 @@ const Index: React.FC = () => {
                 <button className="hover-scale rounded-lg bg-background px-8 py-3 text-lg font-bold text-foreground shadow-lg transition-colors hover:bg-muted">
                   Download Apk
                 </button>
-                <button className="hover-scale rounded-lg bg-background px-8 py-3 text-lg font-bold text-foreground shadow-lg transition-colors hover:bg-muted">
+                <button className="hover-scale rounded-lg bg-background px-8 py-3 text-lg font-bold text-foreground shadow-lg transition-colors hover:bg-muted my-0">
                   Sign in
                 </button>
               </div>
-              <button className="hover-scale rounded-lg border border-primary-foreground/20 bg-foreground px-8 py-3 text-lg font-bold text-background shadow-lg transition-colors hover:bg-foreground/90">
+              <button className="hover-scale rounded-lg border-primary-foreground/20 bg-foreground px-8 text-lg font-bold text-background shadow-lg transition-colors hover:bg-foreground/90 py-[9px] border-0 my-0">
                 <span className="block leading-snug">Google Play Store</span>
                 <span className="block text-xs font-normal text-background/80">(coming soon)</span>
               </button>
