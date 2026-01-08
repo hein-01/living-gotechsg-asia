@@ -5,8 +5,6 @@ import HeroPromo from "@/assets/hero-promo.png";
 const Index: React.FC = () => {
   const heroSlides = [
     "linear-gradient(rgba(14,23,42,0.4), rgba(14,23,42,0.6)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDGzVrIT2zYNe521vUeyB5n3Uf-IneUofyQNxOCovrwF7iRIvs6gNw7KCM-Jon7ebxcm-L2-ea71w9jkdhYOh-Brhotia0thZszvqPL5HAP2CSwS6oC_jryxNmg2z2nAwoj4dvvD8GsPq7U6i3EDkldwqIiXYJvtm11mEKJVjmXIlBme6zUf8s1U5Q2Ko-Bp-13ALgjI10zhwJdDpa_nxaqA1fuCoThUavOgqO8AiV-kEVlkJYzIO-6J46sZZ5ct5YgtOZQgVqzGuj6')",
-    "linear-gradient(rgba(14,23,42,0.4), rgba(14,23,42,0.6)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBw0vt7eDy97ATXdA6R4ZjWHInNzVR-YrdFwTgL6DRDJdj-jNDrRRBdTqWmo7cAor8VH8EUpi5ylFrrJOA1VJwD6YGCovDk-uh-g3gRjJ7TxgbwRTnbeUnFNKplhjazEUTy3vHJeSJJCoUdZAquEaVbF7VMjt8yRZsjWomjJ8w6BV-MR1x5e_gZBR2INp6n1cs0WDpyHYOUgS8grGIXufqQeD-3bNCbGbNEwAzpAJJ264yvlN5lcJb5660EmcLzkk4sg-9-td2qMMqr')",
-    "linear-gradient(rgba(14,23,42,0.4), rgba(14,23,42,0.6)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuC887anOshRPEW0mtagLDnDWAPoGMqVcpXcQiXLafoOiZeimsJJhz-DWLqcuoXYsIxBBpYP2-DlxhI8pF_7H03n94vtCYSoPTk-QERH5a4ljRB_M41FqFwOr2QPyIrq_GuROLBGdY9ROiQHBVb6R13OR89BlQ-GOwJJHQij1nQqw8JZGPIHtJvi1gz8W8_l_GsJkkCgGi1AmblLty1jD-uCKuYt9FWPmgfvHyQNh4YrlNuueWW3L-xa5_6dyq_L3f0XJQ9FdDqHX4Xi')",
     `linear-gradient(rgba(14,23,42,0.5), rgba(14,23,42,0.7)), url(${HeroPromo})`,
   ];
 
