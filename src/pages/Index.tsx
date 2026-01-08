@@ -266,28 +266,28 @@ const Index: React.FC = () => {
                           href={buildWhatsAppUrl("The Solo")}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover-scale flex-1 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-md ring-1 ring-primary/40 transition-colors hover:bg-primary/90"
+                          className="hover-scale flex-1 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-md ring-1 ring-primary/60 transition-colors hover:bg-primary/95 hover:ring-primary"
                         >
                           <div className="flex items-center justify-between gap-3">
                             <div className="flex items-center gap-2">
                               <span className="material-symbols-outlined text-[18px]">chat</span>
                               <span>WhatsApp</span>
                             </div>
-                            <span className="text-xs font-normal opacity-90">+65 93805126</span>
+                            <span className="text-xs font-normal opacity-95">+65 93805126</span>
                           </div>
                         </a>
                         <a
                           href={buildViberUrl("The Solo")}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover-scale flex-1 rounded-xl border border-accent/60 bg-background px-4 py-3 text-sm font-semibold text-accent shadow-sm transition-colors hover:bg-accent/5"
+                          className="hover-scale flex-1 rounded-xl border border-accent/70 bg-muted px-4 py-3 text-sm font-semibold text-accent shadow-sm transition-colors hover:bg-accent/10 hover:border-accent"
                         >
                           <div className="flex items-center justify-between gap-3">
                             <div className="flex items-center gap-2">
                               <span className="material-symbols-outlined text-[18px]">call</span>
                               <span>Viber</span>
                             </div>
-                            <span className="text-xs font-normal opacity-90">+95 9951343605</span>
+                            <span className="text-xs font-normal opacity-95">+95 9951343605</span>
                           </div>
                         </a>
                       </div>
@@ -484,28 +484,28 @@ const Index: React.FC = () => {
                           href={buildWhatsAppUrl("The Couple")}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover-scale flex-1 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-md ring-1 ring-primary/40 transition-colors hover:bg-primary/90"
+                          className="hover-scale flex-1 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-md ring-1 ring-primary/60 transition-colors hover:bg-primary/95 hover:ring-primary"
                         >
                           <div className="flex items-center justify-between gap-3">
                             <div className="flex items-center gap-2">
                               <span className="material-symbols-outlined text-[18px]">chat</span>
                               <span>WhatsApp</span>
                             </div>
-                            <span className="text-xs font-normal opacity-90">+65 93805126</span>
+                            <span className="text-xs font-normal opacity-95">+65 93805126</span>
                           </div>
                         </a>
                         <a
                           href={buildViberUrl("The Couple")}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover-scale flex-1 rounded-xl border border-accent/60 bg-background px-4 py-3 text-sm font-semibold text-accent shadow-sm transition-colors hover:bg-accent/5"
+                          className="hover-scale flex-1 rounded-xl border border-accent/70 bg-muted px-4 py-3 text-sm font-semibold text-accent shadow-sm transition-colors hover:bg-accent/10 hover:border-accent"
                         >
                           <div className="flex items-center justify-between gap-3">
                             <div className="flex items-center gap-2">
                               <span className="material-symbols-outlined text-[18px]">call</span>
                               <span>Viber</span>
                             </div>
-                            <span className="text-xs font-normal opacity-90">+95 9951343605</span>
+                            <span className="text-xs font-normal opacity-95">+95 9951343605</span>
                           </div>
                         </a>
                       </div>
@@ -699,28 +699,28 @@ const Index: React.FC = () => {
                           href={buildWhatsAppUrl("The Family")}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover-scale flex-1 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-md ring-1 ring-primary/40 transition-colors hover:bg-primary/90"
+                          className="hover-scale flex-1 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-md ring-1 ring-primary/60 transition-colors hover:bg-primary/95 hover:ring-primary"
                         >
                           <div className="flex items-center justify-between gap-3">
                             <div className="flex items-center gap-2">
                               <span className="material-symbols-outlined text-[18px]">chat</span>
                               <span>WhatsApp</span>
                             </div>
-                            <span className="text-xs font-normal opacity-90">+65 93805126</span>
+                            <span className="text-xs font-normal opacity-95">+65 93805126</span>
                           </div>
                         </a>
                         <a
                           href={buildViberUrl("The Family")}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover-scale flex-1 rounded-xl border border-accent/60 bg-background px-4 py-3 text-sm font-semibold text-accent shadow-sm transition-colors hover:bg-accent/5"
+                          className="hover-scale flex-1 rounded-xl border border-accent/70 bg-muted px-4 py-3 text-sm font-semibold text-accent shadow-sm transition-colors hover:bg-accent/10 hover:border-accent"
                         >
                           <div className="flex items-center justify-between gap-3">
                             <div className="flex items-center gap-2">
                               <span className="material-symbols-outlined text-[18px]">call</span>
                               <span>Viber</span>
                             </div>
-                            <span className="text-xs font-normal opacity-90">+95 9951343605</span>
+                            <span className="text-xs font-normal opacity-95">+95 9951343605</span>
                           </div>
                         </a>
                       </div>
