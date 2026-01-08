@@ -271,7 +271,10 @@ const Index: React.FC = () => {
                           rel="noreferrer"
                           className="w-full border border-primary bg-primary py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
                         >
-                          Whatsapp (+65 93805126)
+                          <div className="flex flex-col items-center leading-snug">
+                            <span>Whatsapp</span>
+                            <span className="text-xs opacity-90">+65 93805126</span>
+                          </div>
                         </a>
                         <a
                           href={buildViberUrl("The Solo")}
@@ -279,7 +282,10 @@ const Index: React.FC = () => {
                           rel="noreferrer"
                           className="w-full border border-secondary bg-secondary py-3 text-sm font-medium text-secondary-foreground transition-colors hover:bg-secondary/90"
                         >
-                          Viber (+95 9951343605)
+                          <div className="flex flex-col items-center leading-snug">
+                            <span>Viber</span>
+                            <span className="text-xs opacity-90">+95 9951343605</span>
+                          </div>
                         </a>
                         <DialogTrigger asChild>
                           <button className="w-full border border-muted bg-muted py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted/80">
@@ -478,7 +484,10 @@ const Index: React.FC = () => {
                           rel="noreferrer"
                           className="w-full border border-primary bg-primary py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
                         >
-                          Whatsapp (+65 93805126)
+                          <div className="flex flex-col items-center leading-snug">
+                            <span>Whatsapp</span>
+                            <span className="text-xs opacity-90">+65 93805126</span>
+                          </div>
                         </a>
                         <a
                           href={buildViberUrl("The Couple")}
@@ -486,7 +495,10 @@ const Index: React.FC = () => {
                           rel="noreferrer"
                           className="w-full border border-secondary bg-secondary py-3 text-sm font-medium text-secondary-foreground transition-colors hover:bg-secondary/90"
                         >
-                          Viber (+95 9951343605)
+                          <div className="flex flex-col items-center leading-snug">
+                            <span>Viber</span>
+                            <span className="text-xs opacity-90">+95 9951343605</span>
+                          </div>
                         </a>
                         <DialogTrigger asChild>
                           <button className="w-full border border-muted bg-muted py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted/80">
@@ -682,7 +694,10 @@ const Index: React.FC = () => {
                           rel="noreferrer"
                           className="w-full border border-primary bg-primary py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
                         >
-                          Whatsapp (+65 93805126)
+                          <div className="flex flex-col items-center leading-snug">
+                            <span>Whatsapp</span>
+                            <span className="text-xs opacity-90">+65 93805126</span>
+                          </div>
                         </a>
                         <a
                           href={buildViberUrl("The Family")}
@@ -690,7 +705,10 @@ const Index: React.FC = () => {
                           rel="noreferrer"
                           className="w-full border border-secondary bg-secondary py-3 text-sm font-medium text-secondary-foreground transition-colors hover:bg-secondary/90"
                         >
-                          Viber (+95 9951343605)
+                          <div className="flex flex-col items-center leading-snug">
+                            <span>Viber</span>
+                            <span className="text-xs opacity-90">+95 9951343605</span>
+                          </div>
                         </a>
                         <DialogTrigger asChild>
                           <button className="w-full border border-muted bg-muted py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted/80">
