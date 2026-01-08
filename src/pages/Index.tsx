@@ -886,9 +886,14 @@ const Index: React.FC = () => {
             <h2 className="mb-6 text-3xl font-bold md:text-4xl">Ready to upgrade your living?</h2>
             <p className="mx-auto mb-8 max-w-2xl text-lg text-primary-foreground/80">Sign in or Download the app to save your favorite desings and customize your unit and track your project progress in real-time.</p>
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
-              <button className="hover-scale rounded-lg bg-background px-8 py-3 text-lg font-bold text-foreground shadow-lg transition-colors hover:bg-muted">
-                Download Apk
-              </button>
+              <div className="flex flex-col gap-2">
+                <button className="hover-scale rounded-lg bg-background px-8 py-3 text-lg font-bold text-foreground shadow-lg transition-colors hover:bg-muted">
+                  Download Apk
+                </button>
+                <button className="hover-scale rounded-lg bg-background px-8 py-3 text-lg font-bold text-foreground shadow-lg transition-colors hover:bg-muted">
+                  Sign in
+                </button>
+              </div>
               <button className="hover-scale rounded-lg border border-primary-foreground/20 bg-foreground px-8 py-3 text-lg font-bold text-background shadow-lg transition-colors hover:bg-foreground/90">
                 <span className="block leading-snug">Google Play Store</span>
                 <span className="block text-xs font-normal text-background/80">(coming soon)</span>
