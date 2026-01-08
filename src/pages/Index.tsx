@@ -5,6 +5,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { MessageCircle, PhoneCall } from "lucide-react";
 const Index: React.FC = () => {
   const heroSlides = [
     "linear-gradient(rgba(14,23,42,0.4), rgba(14,23,42,0.6)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDGzVrIT2zYNe521vUeyB5n3Uf-IneUofyQNxOCovrwF7iRIvs6gNw7KCM-Jon7ebxcm-L2-ea71w9jkdhYOh-Brhotia0thZszvqPL5HAP2CSwS6oC_jryxNmg2z2nAwoj4dvvD8GsPq7U6i3EDkldwqIiXYJvtm11mEKJVjmXIlBme6zUf8s1U5Q2Ko-Bp-13ALgjI10zhwJdDpa_nxaqA1fuCoThUavOgqO8AiV-kEVlkJYzIO-6J46sZZ5ct5YgtOZQgVqzGuj6')",
@@ -272,7 +273,8 @@ const Index: React.FC = () => {
                           rel="noreferrer"
                           className="w-full rounded-sm border border-emerald-600 bg-emerald-600 py-3 text-sm font-medium text-emerald-50 transition-colors hover:bg-emerald-700"
                         >
-                          <div className="flex flex-col items-center leading-snug">
+                          <div className="flex flex-col items-center gap-1 leading-snug">
+                            <MessageCircle className="h-4 w-4" aria-hidden="true" />
                             <span>Whatsapp</span>
                             <span className="text-xs opacity-90">+65 93805126</span>
                           </div>
@@ -283,7 +285,8 @@ const Index: React.FC = () => {
                           rel="noreferrer"
                           className="w-full rounded-sm border border-purple-600 bg-purple-600 py-3 text-sm font-medium text-purple-50 transition-colors hover:bg-purple-700"
                         >
-                          <div className="flex flex-col items-center leading-snug">
+                          <div className="flex flex-col items-center gap-1 leading-snug">
+                            <PhoneCall className="h-4 w-4" aria-hidden="true" />
                             <span>Viber</span>
                             <span className="text-xs opacity-90">+95 9951343605</span>
                           </div>
@@ -486,7 +489,8 @@ const Index: React.FC = () => {
                           rel="noreferrer"
                           className="w-full rounded-sm border border-emerald-600 bg-emerald-600 py-3 text-sm font-medium text-emerald-50 transition-colors hover:bg-emerald-700"
                         >
-                          <div className="flex flex-col items-center leading-snug">
+                          <div className="flex flex-col items-center gap-1 leading-snug">
+                            <MessageCircle className="h-4 w-4" aria-hidden="true" />
                             <span>Whatsapp</span>
                             <span className="text-xs opacity-90">+65 93805126</span>
                           </div>
@@ -497,7 +501,8 @@ const Index: React.FC = () => {
                           rel="noreferrer"
                           className="w-full rounded-sm border border-purple-600 bg-purple-600 py-3 text-sm font-medium text-purple-50 transition-colors hover:bg-purple-700"
                         >
-                          <div className="flex flex-col items-center leading-snug">
+                          <div className="flex flex-col items-center gap-1 leading-snug">
+                            <PhoneCall className="h-4 w-4" aria-hidden="true" />
                             <span>Viber</span>
                             <span className="text-xs opacity-90">+95 9951343605</span>
                           </div>
@@ -697,7 +702,8 @@ const Index: React.FC = () => {
                           rel="noreferrer"
                           className="w-full rounded-sm border border-emerald-600 bg-emerald-600 py-3 text-sm font-medium text-emerald-50 transition-colors hover:bg-emerald-700"
                         >
-                          <div className="flex flex-col items-center leading-snug">
+                          <div className="flex flex-col items-center gap-1 leading-snug">
+                            <MessageCircle className="h-4 w-4" aria-hidden="true" />
                             <span>Whatsapp</span>
                             <span className="text-xs opacity-90">+65 93805126</span>
                           </div>
@@ -708,7 +714,8 @@ const Index: React.FC = () => {
                           rel="noreferrer"
                           className="w-full rounded-sm border border-purple-600 bg-purple-600 py-3 text-sm font-medium text-purple-50 transition-colors hover:bg-purple-700"
                         >
-                          <div className="flex flex-col items-center leading-snug">
+                          <div className="flex flex-col items-center gap-1 leading-snug">
+                            <PhoneCall className="h-4 w-4" aria-hidden="true" />
                             <span>Viber</span>
                             <span className="text-xs opacity-90">+95 9951343605</span>
                           </div>
