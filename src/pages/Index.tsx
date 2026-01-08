@@ -260,9 +260,8 @@ const Index: React.FC = () => {
                       </span>
                       <span className="text-xs font-medium text-muted-foreground sm:text-sm">USD</span>
                     </div>
-                    <button className="flex w-full items-center justify-center gap-2 bg-accent py-3 text-sm font-bold text-accent-foreground shadow-md transition-colors hover:bg-accent/90">
-                      <span className="material-symbols-outlined text-[20px]">videocam</span>
-                      View 3D Video
+                    <button className="w-full border border-border bg-background py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted">
+                      View 3d Video
                     </button>
                     <Dialog>
                       <div className="flex flex-col gap-3">
@@ -270,33 +269,21 @@ const Index: React.FC = () => {
                           href={buildWhatsAppUrl("The Solo")}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover-scale flex-1 bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-md ring-1 ring-primary/60 transition-colors hover:bg-primary/95 hover:ring-primary"
+                          className="w-full border border-border bg-background py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted"
                         >
-                          <div className="flex items-center justify-between gap-3">
-                            <div className="flex items-center gap-2">
-                              <span className="material-symbols-outlined text-[18px]">chat</span>
-                              <span>WhatsApp</span>
-                            </div>
-                            <span className="text-xs font-normal opacity-95">+65 93805126</span>
-                          </div>
+                          Whatsapp (+65 93805126)
                         </a>
                         <a
                           href={buildViberUrl("The Solo")}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover-scale flex-1 border border-accent/70 bg-muted px-4 py-3 text-sm font-semibold text-accent shadow-sm transition-colors hover:bg-accent/10 hover:border-accent"
+                          className="w-full border border-border bg-background py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted"
                         >
-                          <div className="flex items-center justify-between gap-3">
-                            <div className="flex items-center gap-2">
-                              <span className="material-symbols-outlined text-[18px]">call</span>
-                              <span>Viber</span>
-                            </div>
-                            <span className="text-xs font-normal opacity-95">+95 9951343605</span>
-                          </div>
+                          Viber (+95 9951343605)
                         </a>
                         <DialogTrigger asChild>
-                          <button className="w-full border border-primary/60 bg-background py-4 text-sm font-bold text-primary transition-colors hover:bg-primary/5">
-                            Book online
+                          <button className="w-full border border-border bg-background py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted">
+                            Book Now
                           </button>
                         </DialogTrigger>
                       </div>
@@ -480,9 +467,8 @@ const Index: React.FC = () => {
                       </span>
                       <span className="text-xs font-medium text-muted-foreground sm:text-sm">USD</span>
                     </div>
-                    <button className="flex w-full items-center justify-center gap-2 bg-accent py-3 text-sm font-bold text-accent-foreground shadow-md transition-colors hover:bg-accent/90">
-                      <span className="material-symbols-outlined text-[20px]">videocam</span>
-                      View 3D Video
+                    <button className="w-full border border-border bg-background py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted">
+                      View 3d Video
                     </button>
                     <Dialog>
                       <div className="flex flex-col gap-3">
@@ -490,33 +476,21 @@ const Index: React.FC = () => {
                           href={buildWhatsAppUrl("The Couple")}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover-scale flex-1 bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-md ring-1 ring-primary/60 transition-colors hover:bg-primary/95 hover:ring-primary"
+                          className="w-full border border-border bg-background py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted"
                         >
-                          <div className="flex items-center justify-between gap-3">
-                            <div className="flex items-center gap-2">
-                              <span className="material-symbols-outlined text-[18px]">chat</span>
-                              <span>WhatsApp</span>
-                            </div>
-                            <span className="text-xs font-normal opacity-95">+65 93805126</span>
-                          </div>
+                          Whatsapp (+65 93805126)
                         </a>
                         <a
                           href={buildViberUrl("The Couple")}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover-scale flex-1 border border-accent/70 bg-muted px-4 py-3 text-sm font-semibold text-accent shadow-sm transition-colors hover:bg-accent/10 hover:border-accent"
+                          className="w-full border border-border bg-background py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted"
                         >
-                          <div className="flex items-center justify-between gap-3">
-                            <div className="flex items-center gap-2">
-                              <span className="material-symbols-outlined text-[18px]">call</span>
-                              <span>Viber</span>
-                            </div>
-                            <span className="text-xs font-normal opacity-95">+95 9951343605</span>
-                          </div>
+                          Viber (+95 9951343605)
                         </a>
                         <DialogTrigger asChild>
-                          <button className="w-full border border-primary/60 bg-background py-4 text-sm font-bold text-primary transition-colors hover:bg-primary/5">
-                            Book online
+                          <button className="w-full border border-border bg-background py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted">
+                            Book Now
                           </button>
                         </DialogTrigger>
                       </div>
@@ -697,9 +671,8 @@ const Index: React.FC = () => {
                       </span>
                       <span className="text-xs font-medium text-muted-foreground sm:text-sm">USD</span>
                     </div>
-                    <button className="flex w-full items-center justify-center gap-2 bg-accent py-3 text-sm font-bold text-accent-foreground shadow-md transition-colors hover:bg-accent/90">
-                      <span className="material-symbols-outlined text-[20px]">videocam</span>
-                      View 3D Video
+                    <button className="w-full border border-border bg-background py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted">
+                      View 3d Video
                     </button>
                     <Dialog>
                       <div className="flex flex-col gap-3">
@@ -707,33 +680,21 @@ const Index: React.FC = () => {
                           href={buildWhatsAppUrl("The Family")}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover-scale flex-1 bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-md ring-1 ring-primary/60 transition-colors hover:bg-primary/95 hover:ring-primary"
+                          className="w-full border border-border bg-background py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted"
                         >
-                          <div className="flex items-center justify-between gap-3">
-                            <div className="flex items-center gap-2">
-                              <span className="material-symbols-outlined text-[18px]">chat</span>
-                              <span>WhatsApp</span>
-                            </div>
-                            <span className="text-xs font-normal opacity-95">+65 93805126</span>
-                          </div>
+                          Whatsapp (+65 93805126)
                         </a>
                         <a
                           href={buildViberUrl("The Family")}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover-scale flex-1 border border-accent/70 bg-muted px-4 py-3 text-sm font-semibold text-accent shadow-sm transition-colors hover:bg-accent/10 hover:border-accent"
+                          className="w-full border border-border bg-background py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted"
                         >
-                          <div className="flex items-center justify-between gap-3">
-                            <div className="flex items-center gap-2">
-                              <span className="material-symbols-outlined text-[18px]">call</span>
-                              <span>Viber</span>
-                            </div>
-                            <span className="text-xs font-normal opacity-95">+95 9951343605</span>
-                          </div>
+                          Viber (+95 9951343605)
                         </a>
                         <DialogTrigger asChild>
-                          <button className="w-full border border-primary/60 bg-background py-4 text-sm font-bold text-primary transition-colors hover:bg-primary/5">
-                            Book online
+                          <button className="w-full border border-border bg-background py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted">
+                            Book Now
                           </button>
                         </DialogTrigger>
                       </div>
