@@ -1105,6 +1105,7 @@ const Index: React.FC = () => {
                   <div className="text-left">
                     <div className="text-[10px] uppercase leading-none text-primary-foreground/70">Get it on</div>
                     <div className="text-sm font-bold leading-tight">Google Play</div>
+                    <div className="text-[10px] leading-tight text-primary-foreground/70">(coming soon)</div>
                   </div>
                 </button>
                 <button className="flex w-full items-center justify-center gap-3 rounded-lg border border-primary-foreground/20 bg-primary-foreground/10 p-3 text-primary-foreground transition-colors hover:bg-primary-foreground/20 sm:w-auto">
@@ -1112,6 +1113,7 @@ const Index: React.FC = () => {
                   <div className="text-left">
                     <div className="text-[10px] uppercase leading-none text-primary-foreground/70">Download on</div>
                     <div className="text-sm font-bold leading-tight">App Store</div>
+                    <div className="text-[10px] leading-tight text-primary-foreground/70">(coming soon)</div>
                   </div>
                 </button>
               </div>
