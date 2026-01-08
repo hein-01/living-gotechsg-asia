@@ -932,64 +932,89 @@ const Index: React.FC = () => {
           </div>
         </section>
 
-        {/* Why Choose Section */}
-        <section className="bg-card px-4 pt-0 pb-20 md:px-20 lg:px-40 md:pt-20">
+        {/* Benefits / Promise Section */}
+        <section className="bg-card px-4 py-16 md:px-20 lg:px-40">
           <div className="mx-auto max-w-[1100px]">
-            <div className="flex flex-col items-center gap-12 md:flex-row">
-              <div className="md:w-1/2">
-                <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-                  <div
-                    className="h-[400px] w-full bg-cover bg-center"
-                    style={{
-                      backgroundImage:
-                        "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAkx0yOcxMiGnzmrDgVq-3A7VWoB4wrgmuVrA_V1AjzD4WAdIHMZaQtn8xcSc3iQp74CzlG_LYeo7PRTXRUeOa2yoseNFtJxxhesxtebHAw33a7dLEslzuUTplzLBR4yyg5276_shG8b_k-QV05ptNcpGTxChfi05P-Tha0rVL02odiivoG-cDCUJsGTHH7PEZyZx7HiaR1eBXZG8xpYwnQST0YjVK0WMkSgX_HkRkEn4s6q6CEWc_FJFl89IfzVTWmfA7JWrzmDzzT')",
-                    }}
-                  />
-                  <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-8">
-                    <p className="text-lg font-bold text-primary-foreground">Engineering Excellence</p>
-                    <p className="text-sm text-primary-foreground/80">Light Steel Frame Technology</p>
+            <div className="mb-10 text-center md:text-left">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary/80">
+                Why GoTech?</p>
+              <h2 className="mt-3 text-3xl font-bold leading-tight tracking-[-0.02em] text-foreground md:text-4xl">
+                Cooler, faster and stronger homes for modern living.
+              </h2>
+              <p className="mt-4 max-w-2xl text-sm text-muted-foreground md:text-base">
+                Every unit is engineered for tropical climates with precision steel framing, premium insulation
+                and efficient construction so you get a home that feels good to live in from day one.
+              </p>
+            </div>
+
+            <div className="grid gap-6 md:grid-cols-[1.2fr,1fr] md:items-center">
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div className="rounded-2xl border border-border bg-muted/40 p-5 shadow-sm">
+                  <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
+                    <span className="material-symbols-outlined text-base">thermostat</span>
+                    <span>Thermal comfort</span>
                   </div>
+                  <h3 className="text-base font-semibold text-foreground">Superior insulation</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Stay up to 7°C cooler inside compared to conventional builds, even in peak afternoon heat.
+                  </p>
+                </div>
+
+                <div className="rounded-2xl border border-border bg-muted/40 p-5 shadow-sm">
+                  <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
+                    <span className="material-symbols-outlined text-base">bolt</span>
+                    <span>Fast build</span>
+                  </div>
+                  <h3 className="text-base font-semibold text-foreground">Move-in in weeks</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Precision off-site fabrication means cleaner sites, less noise and dramatically shorter timelines.
+                  </p>
+                </div>
+
+                <div className="rounded-2xl border border-border bg-muted/40 p-5 shadow-sm">
+                  <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
+                    <span className="material-symbols-outlined text-base">shield</span>
+                    <span>Built to last</span>
+                  </div>
+                  <h3 className="text-base font-semibold text-foreground">Steel you can trust</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Galvanized, rust-resistant frames engineered to international standards for durability and safety.
+                  </p>
+                </div>
+
+                <div className="rounded-2xl border border-border bg-muted/40 p-5 shadow-sm">
+                  <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
+                    <span className="material-symbols-outlined text-base">savings</span>
+                    <span>Smart value</span>
+                  </div>
+                  <h3 className="text-base font-semibold text-foreground">Predictable costs</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Transparent factory-direct pricing and minimal on-site variations keep your budget under control.
+                  </p>
                 </div>
               </div>
 
-              <div className="md:w-1/2">
-                <h2 className="mb-8 text-3xl font-bold leading-tight tracking-[-0.015em] text-foreground">
-                  Why choose GoTech?
-                </h2>
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                  <div className="flex flex-col gap-2">
-                    <div className="mb-2 w-fit rounded-lg bg-primary/10 p-3 text-primary">
-                      <span className="material-symbols-outlined">thermostat</span>
-                    </div>
-                    <h4 className="font-bold text-foreground">Superior Insulation</h4>
-                    <p className="text-sm text-muted-foreground">Built for the heat. No oven effect inside your home.</p>
-                  </div>
-
-                  <div className="flex flex-col gap-2">
-                    <div className="mb-2 w-fit rounded-lg bg-primary/10 p-3 text-primary">
-                      <span className="material-symbols-outlined">bolt</span>
-                    </div>
-                    <h4 className="font-bold text-foreground">Incredible Speed</h4>
-                    <p className="text-sm text-muted-foreground">Move in within weeks, not months. Save time &amp; money.</p>
-                  </div>
-
-                  <div className="flex flex-col gap-2">
-                    <div className="mb-2 w-fit rounded-lg bg-primary/10 p-3 text-primary">
-                      <span className="material-symbols-outlined">shield</span>
-                    </div>
-                    <h4 className="font-bold text-foreground">Built to Last</h4>
-                    <p className="text-sm text-muted-foreground">Rust-proof galvanized steel frame structure.</p>
-                  </div>
-
-                  <div className="flex flex-col gap-2">
-                    <div className="mb-2 w-fit rounded-lg bg-primary/10 p-3 text-primary">
-                      <span className="material-symbols-outlined">savings</span>
-                    </div>
-                    <h4 className="font-bold text-foreground">Best Value</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Unbeatable factory-direct prices starting from $2,900.
-                    </p>
-                  </div>
+              <div className="mt-4 space-y-4 rounded-3xl bg-background/80 p-6 shadow-xl ring-1 ring-border/60 md:mt-0">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-primary/80">
+                  Engineered, not improvised
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  From structural design to final assembly, every GoTech unit follows a repeatable, quality-checked
+                  process. That means fewer surprises for you and a home that performs exactly as promised.
+                </p>
+                <div className="flex flex-wrap gap-3 text-xs text-muted-foreground">
+                  <span className="inline-flex items-center gap-1 rounded-full bg-muted px-3 py-1">
+                    <span className="material-symbols-outlined text-base">energy_savings_leaf</span>
+                    <span>Energy-efficient envelope</span>
+                  </span>
+                  <span className="inline-flex items-center gap-1 rounded-full bg-muted px-3 py-1">
+                    <span className="material-symbols-outlined text-base">check_circle</span>
+                    <span>Factory QA on every unit</span>
+                  </span>
+                  <span className="inline-flex items-center gap-1 rounded-full bg-muted px-3 py-1">
+                    <span className="material-symbols-outlined text-base">deployed_code</span>
+                    <span>Light steel frame system</span>
+                  </span>
                 </div>
               </div>
             </div>
