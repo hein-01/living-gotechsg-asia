@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import GoTechLogo from "@/assets/gotech-logo.png";
 import HeroPromo from "@/assets/hero-promo.png";
-
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 const Index: React.FC = () => {
   const heroSlides = [
     "linear-gradient(rgba(14,23,42,0.4), rgba(14,23,42,0.6)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDGzVrIT2zYNe521vUeyB5n3Uf-IneUofyQNxOCovrwF7iRIvs6gNw7KCM-Jon7ebxcm-L2-ea71w9jkdhYOh-Brhotia0thZszvqPL5HAP2CSwS6oC_jryxNmg2z2nAwoj4dvvD8GsPq7U6i3EDkldwqIiXYJvtm11mEKJVjmXIlBme6zUf8s1U5Q2Ko-Bp-13ALgjI10zhwJdDpa_nxaqA1fuCoThUavOgqO8AiV-kEVlkJYzIO-6J46sZZ5ct5YgtOZQgVqzGuj6')",
@@ -257,24 +260,117 @@ const Index: React.FC = () => {
                       <span className="material-symbols-outlined text-[20px]">videocam</span>
                       View 3D Video
                     </button>
-                    <div className="flex flex-col gap-2 sm:flex-row">
-                      <a
-                        href={buildWhatsAppUrl("The Solo")}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="flex-1 rounded-lg bg-foreground py-3 text-center text-sm font-bold text-background transition-colors hover:bg-primary"
-                      >
-                        Book on WhatsApp
-                      </a>
-                      <a
-                        href={buildViberUrl("The Solo")}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="flex-1 rounded-lg border border-primary/60 bg-background py-3 text-center text-sm font-bold text-primary transition-colors hover:bg-primary/5"
-                      >
-                        Book on Viber
-                      </a>
-                    </div>
+                    <Dialog>
+                      <div className="flex flex-col gap-2 sm:flex-row">
+                        <a
+                          href={buildWhatsAppUrl("The Solo")}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="flex-1 rounded-lg bg-foreground py-3 text-center text-sm font-bold text-background transition-colors hover:bg-primary"
+                        >
+                          WhatsApp
+                        </a>
+                        <a
+                          href={buildViberUrl("The Solo")}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="flex-1 rounded-lg border border-primary/60 bg-background py-3 text-center text-sm font-bold text-primary transition-colors hover:bg-primary/5"
+                        >
+                          Viber
+                        </a>
+                      </div>
+                      <DialogTrigger asChild>
+                        <button className="mt-2 w-full rounded-lg border border-primary/60 bg-background py-3 text-sm font-bold text-primary transition-colors hover:bg-primary/5">
+                          Book online
+                        </button>
+                      </DialogTrigger>
+                      <DialogContent>
+                        <DialogHeader>
+                          <DialogTitle>Book The Solo</DialogTitle>
+                          <DialogDescription>
+                            Leave your details and we&apos;ll contact you within 24 hours to confirm your booking.
+                          </DialogDescription>
+                        </DialogHeader>
+                        <form
+                          className="mt-4 space-y-4"
+                          onSubmit={(event) => {
+                            event.preventDefault();
+                            const formData = new FormData(event.currentTarget);
+                            const name = String(formData.get("name") ?? "").trim();
+                            const email = String(formData.get("email") ?? "").trim();
+                            const phone = String(formData.get("phone") ?? "").trim();
+                            const location = String(formData.get("location") ?? "").trim();
+                            const timeframe = String(formData.get("timeframe") ?? "").trim();
+
+                            if (!name || !email || !phone || !location || !timeframe) {
+                              alert("Please fill in all fields before submitting.");
+                              return;
+                            }
+
+                            const emailPattern = /.+@.+\..+/;
+                            if (!emailPattern.test(email)) {
+                              alert("Please enter a valid email address.");
+                              return;
+                            }
+
+                            alert("Thank you! We\'ll contact you within 24 hours.");
+                            event.currentTarget.reset();
+                          }}
+                        >
+                          <div className="grid gap-4 sm:grid-cols-2">
+                            <div className="flex flex-col gap-1.5">
+                              <Label htmlFor="solo-name">Name</Label>
+                              <Input id="solo-name" name="name" required maxLength={100} />
+                            </div>
+                            <div className="flex flex-col gap-1.5">
+                              <Label htmlFor="solo-email">Email</Label>
+                              <Input id="solo-email" name="email" type="email" required maxLength={255} />
+                            </div>
+                          </div>
+                          <div className="grid gap-4 sm:grid-cols-2">
+                            <div className="flex flex-col gap-1.5">
+                              <Label htmlFor="solo-phone">Phone</Label>
+                              <Input id="solo-phone" name="phone" required maxLength={50} />
+                            </div>
+                            <div className="flex flex-col gap-1.5">
+                              <Label htmlFor="solo-location">Location</Label>
+                              <Input id="solo-location" name="location" required maxLength={255} />
+                            </div>
+                          </div>
+                          <div className="flex flex-col gap-1.5">
+                            <Label htmlFor="solo-timeframe">Timeframe</Label>
+                            <Input
+                              id="solo-timeframe"
+                              name="timeframe"
+                              placeholder="e.g. Within 1 month"
+                              required
+                              maxLength={100}
+                            />
+                          </div>
+                          <div className="flex flex-col gap-1.5">
+                            <Label>Preferred unit</Label>
+                            <Select defaultValue="The Solo" name="unit">
+                              <SelectTrigger>
+                                <SelectValue placeholder="Select unit" />
+                              </SelectTrigger>
+                              <SelectContent>
+                                <SelectItem value="The Solo">The Solo</SelectItem>
+                                <SelectItem value="The Couple">The Couple</SelectItem>
+                                <SelectItem value="The Family">The Family</SelectItem>
+                              </SelectContent>
+                            </Select>
+                          </div>
+                          <div className="pt-2">
+                            <button
+                              type="submit"
+                              className="w-full rounded-lg bg-primary py-2.5 text-sm font-bold text-primary-foreground transition-colors hover:bg-primary/90"
+                            >
+                              Submit
+                            </button>
+                          </div>
+                        </form>
+                      </DialogContent>
+                    </Dialog>
                   </div>
                 </div>
               </div>
@@ -370,24 +466,117 @@ const Index: React.FC = () => {
                       <span className="material-symbols-outlined text-[20px]">videocam</span>
                       View 3D Video
                     </button>
-                    <div className="flex flex-col gap-2 sm:flex-row">
-                      <a
-                        href={buildWhatsAppUrl("The Couple")}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="flex-1 rounded-lg bg-foreground py-3 text-center text-sm font-bold text-background shadow-md transition-colors hover:bg-primary"
-                      >
-                        Book on WhatsApp
-                      </a>
-                      <a
-                        href={buildViberUrl("The Couple")}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="flex-1 rounded-lg border border-primary/60 bg-background py-3 text-center text-sm font-bold text-primary transition-colors hover:bg-primary/5"
-                      >
-                        Book on Viber
-                      </a>
-                    </div>
+                    <Dialog>
+                      <div className="flex flex-col gap-2 sm:flex-row">
+                        <a
+                          href={buildWhatsAppUrl("The Couple")}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="flex-1 rounded-lg bg-foreground py-3 text-center text-sm font-bold text-background shadow-md transition-colors hover:bg-primary"
+                        >
+                          WhatsApp
+                        </a>
+                        <a
+                          href={buildViberUrl("The Couple")}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="flex-1 rounded-lg border border-primary/60 bg-background py-3 text-center text-sm font-bold text-primary transition-colors hover:bg-primary/5"
+                        >
+                          Viber
+                        </a>
+                      </div>
+                      <DialogTrigger asChild>
+                        <button className="mt-2 w-full rounded-lg border border-primary/60 bg-background py-3 text-sm font-bold text-primary transition-colors hover:bg-primary/5">
+                          Book online
+                        </button>
+                      </DialogTrigger>
+                      <DialogContent>
+                        <DialogHeader>
+                          <DialogTitle>Book The Couple</DialogTitle>
+                          <DialogDescription>
+                            Leave your details and we&apos;ll contact you within 24 hours to confirm your booking.
+                          </DialogDescription>
+                        </DialogHeader>
+                        <form
+                          className="mt-4 space-y-4"
+                          onSubmit={(event) => {
+                            event.preventDefault();
+                            const formData = new FormData(event.currentTarget);
+                            const name = String(formData.get("name") ?? "").trim();
+                            const email = String(formData.get("email") ?? "").trim();
+                            const phone = String(formData.get("phone") ?? "").trim();
+                            const location = String(formData.get("location") ?? "").trim();
+                            const timeframe = String(formData.get("timeframe") ?? "").trim();
+
+                            if (!name || !email || !phone || !location || !timeframe) {
+                              alert("Please fill in all fields before submitting.");
+                              return;
+                            }
+
+                            const emailPattern = /.+@.+\..+/;
+                            if (!emailPattern.test(email)) {
+                              alert("Please enter a valid email address.");
+                              return;
+                            }
+
+                            alert("Thank you! We\'ll contact you within 24 hours.");
+                            event.currentTarget.reset();
+                          }}
+                        >
+                          <div className="grid gap-4 sm:grid-cols-2">
+                            <div className="flex flex-col gap-1.5">
+                              <Label htmlFor="couple-name">Name</Label>
+                              <Input id="couple-name" name="name" required maxLength={100} />
+                            </div>
+                            <div className="flex flex-col gap-1.5">
+                              <Label htmlFor="couple-email">Email</Label>
+                              <Input id="couple-email" name="email" type="email" required maxLength={255} />
+                            </div>
+                          </div>
+                          <div className="grid gap-4 sm:grid-cols-2">
+                            <div className="flex flex-col gap-1.5">
+                              <Label htmlFor="couple-phone">Phone</Label>
+                              <Input id="couple-phone" name="phone" required maxLength={50} />
+                            </div>
+                            <div className="flex flex-col gap-1.5">
+                              <Label htmlFor="couple-location">Location</Label>
+                              <Input id="couple-location" name="location" required maxLength={255} />
+                            </div>
+                          </div>
+                          <div className="flex flex-col gap-1.5">
+                            <Label htmlFor="couple-timeframe">Timeframe</Label>
+                            <Input
+                              id="couple-timeframe"
+                              name="timeframe"
+                              placeholder="e.g. Within 1 month"
+                              required
+                              maxLength={100}
+                            />
+                          </div>
+                          <div className="flex flex-col gap-1.5">
+                            <Label>Preferred unit</Label>
+                            <Select defaultValue="The Couple" name="unit">
+                              <SelectTrigger>
+                                <SelectValue placeholder="Select unit" />
+                              </SelectTrigger>
+                              <SelectContent>
+                                <SelectItem value="The Solo">The Solo</SelectItem>
+                                <SelectItem value="The Couple">The Couple</SelectItem>
+                                <SelectItem value="The Family">The Family</SelectItem>
+                              </SelectContent>
+                            </Select>
+                          </div>
+                          <div className="pt-2">
+                            <button
+                              type="submit"
+                              className="w-full rounded-lg bg-primary py-2.5 text-sm font-bold text-primary-foreground transition-colors hover:bg-primary/90"
+                            >
+                              Submit
+                            </button>
+                          </div>
+                        </form>
+                      </DialogContent>
+                    </Dialog>
                   </div>
                 </div>
               </div>
@@ -480,24 +669,117 @@ const Index: React.FC = () => {
                       <span className="material-symbols-outlined text-[20px]">videocam</span>
                       View 3D Video
                     </button>
-                    <div className="flex flex-col gap-2 sm:flex-row">
-                      <a
-                        href={buildWhatsAppUrl("The Family")}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="flex-1 rounded-lg bg-foreground py-3 text-center text-sm font-bold text-background transition-colors hover:bg-primary"
-                      >
-                        Book on WhatsApp
-                      </a>
-                      <a
-                        href={buildViberUrl("The Family")}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="flex-1 rounded-lg border border-primary/60 bg-background py-3 text-center text-sm font-bold text-primary transition-colors hover:bg-primary/5"
-                      >
-                        Book on Viber
-                      </a>
-                    </div>
+                    <Dialog>
+                      <div className="flex flex-col gap-2 sm:flex-row">
+                        <a
+                          href={buildWhatsAppUrl("The Family")}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="flex-1 rounded-lg bg-foreground py-3 text-center text-sm font-bold text-background transition-colors hover:bg-primary"
+                        >
+                          WhatsApp
+                        </a>
+                        <a
+                          href={buildViberUrl("The Family")}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="flex-1 rounded-lg border border-primary/60 bg-background py-3 text-center text-sm font-bold text-primary transition-colors hover:bg-primary/5"
+                        >
+                          Viber
+                        </a>
+                      </div>
+                      <DialogTrigger asChild>
+                        <button className="mt-2 w-full rounded-lg border border-primary/60 bg-background py-3 text-sm font-bold text-primary transition-colors hover:bg-primary/5">
+                          Book online
+                        </button>
+                      </DialogTrigger>
+                      <DialogContent>
+                        <DialogHeader>
+                          <DialogTitle>Book The Family</DialogTitle>
+                          <DialogDescription>
+                            Leave your details and we&apos;ll contact you within 24 hours to confirm your booking.
+                          </DialogDescription>
+                        </DialogHeader>
+                        <form
+                          className="mt-4 space-y-4"
+                          onSubmit={(event) => {
+                            event.preventDefault();
+                            const formData = new FormData(event.currentTarget);
+                            const name = String(formData.get("name") ?? "").trim();
+                            const email = String(formData.get("email") ?? "").trim();
+                            const phone = String(formData.get("phone") ?? "").trim();
+                            const location = String(formData.get("location") ?? "").trim();
+                            const timeframe = String(formData.get("timeframe") ?? "").trim();
+
+                            if (!name || !email || !phone || !location || !timeframe) {
+                              alert("Please fill in all fields before submitting.");
+                              return;
+                            }
+
+                            const emailPattern = /.+@.+\..+/;
+                            if (!emailPattern.test(email)) {
+                              alert("Please enter a valid email address.");
+                              return;
+                            }
+
+                            alert("Thank you! We\'ll contact you within 24 hours.");
+                            event.currentTarget.reset();
+                          }}
+                        >
+                          <div className="grid gap-4 sm:grid-cols-2">
+                            <div className="flex flex-col gap-1.5">
+                              <Label htmlFor="family-name">Name</Label>
+                              <Input id="family-name" name="name" required maxLength={100} />
+                            </div>
+                            <div className="flex flex-col gap-1.5">
+                              <Label htmlFor="family-email">Email</Label>
+                              <Input id="family-email" name="email" type="email" required maxLength={255} />
+                            </div>
+                          </div>
+                          <div className="grid gap-4 sm:grid-cols-2">
+                            <div className="flex flex-col gap-1.5">
+                              <Label htmlFor="family-phone">Phone</Label>
+                              <Input id="family-phone" name="phone" required maxLength={50} />
+                            </div>
+                            <div className="flex flex-col gap-1.5">
+                              <Label htmlFor="family-location">Location</Label>
+                              <Input id="family-location" name="location" required maxLength={255} />
+                            </div>
+                          </div>
+                          <div className="flex flex-col gap-1.5">
+                            <Label htmlFor="family-timeframe">Timeframe</Label>
+                            <Input
+                              id="family-timeframe"
+                              name="timeframe"
+                              placeholder="e.g. Within 1 month"
+                              required
+                              maxLength={100}
+                            />
+                          </div>
+                          <div className="flex flex-col gap-1.5">
+                            <Label>Preferred unit</Label>
+                            <Select defaultValue="The Family" name="unit">
+                              <SelectTrigger>
+                                <SelectValue placeholder="Select unit" />
+                              </SelectTrigger>
+                              <SelectContent>
+                                <SelectItem value="The Solo">The Solo</SelectItem>
+                                <SelectItem value="The Couple">The Couple</SelectItem>
+                                <SelectItem value="The Family">The Family</SelectItem>
+                              </SelectContent>
+                            </Select>
+                          </div>
+                          <div className="pt-2">
+                            <button
+                              type="submit"
+                              className="w-full rounded-lg bg-primary py-2.5 text-sm font-bold text-primary-foreground transition-colors hover:bg-primary/90"
+                            >
+                              Submit
+                            </button>
+                          </div>
+                        </form>
+                      </DialogContent>
+                    </Dialog>
                   </div>
                 </div>
               </div>
