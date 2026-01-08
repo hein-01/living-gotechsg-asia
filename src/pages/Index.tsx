@@ -266,19 +266,29 @@ const Index: React.FC = () => {
                           href={buildWhatsAppUrl("The Solo")}
                           target="_blank"
                           rel="noreferrer"
-                          className="flex-1 rounded-lg bg-foreground py-3 text-center text-sm font-bold text-background transition-colors hover:bg-primary"
+                          className="hover-scale flex-1 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-md ring-1 ring-primary/40 transition-colors hover:bg-primary/90"
                         >
-                          <span className="block text-sm font-bold">WhatsApp</span>
-                          <span className="mt-0.5 block text-xs font-normal opacity-80">+65 93805126</span>
+                          <div className="flex items-center justify-between gap-3">
+                            <div className="flex items-center gap-2">
+                              <span className="material-symbols-outlined text-[18px]">chat</span>
+                              <span>WhatsApp</span>
+                            </div>
+                            <span className="text-xs font-normal opacity-90">+65 93805126</span>
+                          </div>
                         </a>
                         <a
                           href={buildViberUrl("The Solo")}
                           target="_blank"
                           rel="noreferrer"
-                          className="flex-1 rounded-lg border border-primary/60 bg-background py-3 text-center text-sm font-bold text-primary transition-colors hover:bg-primary/5"
+                          className="hover-scale flex-1 rounded-xl border border-accent/60 bg-accent/5 px-4 py-3 text-sm font-semibold text-accent-foreground shadow-sm transition-colors hover:bg-accent/10"
                         >
-                          <span className="block text-sm font-bold">Viber</span>
-                          <span className="mt-0.5 block text-xs font-normal opacity-80">+95 9951343605</span>
+                          <div className="flex items-center justify-between gap-3">
+                            <div className="flex items-center gap-2">
+                              <span className="material-symbols-outlined text-[18px]">call</span>
+                              <span>Viber</span>
+                            </div>
+                            <span className="text-xs font-normal opacity-90">+95 9951343605</span>
+                          </div>
                         </a>
                       </div>
                       <DialogTrigger asChild>
@@ -474,19 +484,29 @@ const Index: React.FC = () => {
                           href={buildWhatsAppUrl("The Couple")}
                           target="_blank"
                           rel="noreferrer"
-                          className="flex-1 rounded-lg bg-foreground py-3 text-center text-sm font-bold text-background shadow-md transition-colors hover:bg-primary"
+                          className="hover-scale flex-1 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-md ring-1 ring-primary/40 transition-colors hover:bg-primary/90"
                         >
-                          <span className="block text-sm font-bold">WhatsApp</span>
-                          <span className="mt-0.5 block text-xs font-normal opacity-80">+65 93805126</span>
+                          <div className="flex items-center justify-between gap-3">
+                            <div className="flex items-center gap-2">
+                              <span className="material-symbols-outlined text-[18px]">chat</span>
+                              <span>WhatsApp</span>
+                            </div>
+                            <span className="text-xs font-normal opacity-90">+65 93805126</span>
+                          </div>
                         </a>
                         <a
                           href={buildViberUrl("The Couple")}
                           target="_blank"
                           rel="noreferrer"
-                          className="flex-1 rounded-lg border border-primary/60 bg-background py-3 text-center text-sm font-bold text-primary transition-colors hover:bg-primary/5"
+                          className="hover-scale flex-1 rounded-xl border border-accent/60 bg-accent/5 px-4 py-3 text-sm font-semibold text-accent-foreground shadow-sm transition-colors hover:bg-accent/10"
                         >
-                          <span className="block text-sm font-bold">Viber</span>
-                          <span className="mt-0.5 block text-xs font-normal opacity-80">+95 9951343605</span>
+                          <div className="flex items-center justify-between gap-3">
+                            <div className="flex items-center gap-2">
+                              <span className="material-symbols-outlined text-[18px]">call</span>
+                              <span>Viber</span>
+                            </div>
+                            <span className="text-xs font-normal opacity-90">+95 9951343605</span>
+                          </div>
                         </a>
                       </div>
                       <DialogTrigger asChild>
@@ -674,24 +694,34 @@ const Index: React.FC = () => {
                       View 3D Video
                     </button>
                     <Dialog>
-                     <div className="flex flex-col gap-2">
+                      <div className="flex flex-col gap-2">
                         <a
                           href={buildWhatsAppUrl("The Family")}
                           target="_blank"
                           rel="noreferrer"
-                          className="flex-1 rounded-lg bg-foreground py-3 text-center text-sm font-bold text-background transition-colors hover:bg-primary"
+                          className="hover-scale flex-1 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-md ring-1 ring-primary/40 transition-colors hover:bg-primary/90"
                         >
-                          <span className="block text-sm font-bold">WhatsApp</span>
-                          <span className="mt-0.5 block text-xs font-normal opacity-80">+65 93805126</span>
+                          <div className="flex items-center justify-between gap-3">
+                            <div className="flex items-center gap-2">
+                              <span className="material-symbols-outlined text-[18px]">chat</span>
+                              <span>WhatsApp</span>
+                            </div>
+                            <span className="text-xs font-normal opacity-90">+65 93805126</span>
+                          </div>
                         </a>
                         <a
                           href={buildViberUrl("The Family")}
                           target="_blank"
                           rel="noreferrer"
-                          className="flex-1 rounded-lg border border-primary/60 bg-background py-3 text-center text-sm font-bold text-primary transition-colors hover:bg-primary/5"
+                          className="hover-scale flex-1 rounded-xl border border-accent/60 bg-accent/5 px-4 py-3 text-sm font-semibold text-accent-foreground shadow-sm transition-colors hover:bg-accent/10"
                         >
-                          <span className="block text-sm font-bold">Viber</span>
-                          <span className="mt-0.5 block text-xs font-normal opacity-80">+95 9951343605</span>
+                          <div className="flex items-center justify-between gap-3">
+                            <div className="flex items-center gap-2">
+                              <span className="material-symbols-outlined text-[18px]">call</span>
+                              <span>Viber</span>
+                            </div>
+                            <span className="text-xs font-normal opacity-90">+95 9951343605</span>
+                          </div>
                         </a>
                       </div>
                       <DialogTrigger asChild>
