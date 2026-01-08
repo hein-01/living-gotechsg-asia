@@ -260,8 +260,9 @@ const Index: React.FC = () => {
                       </span>
                       <span className="text-xs font-medium text-muted-foreground sm:text-sm">USD</span>
                     </div>
-                    <button className="w-full rounded-sm border border-accent bg-accent py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90">
-                      View 3d Video
+                    <button className="flex w-full items-center justify-center gap-2 rounded-sm border border-accent bg-accent py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90">
+                      <span className="material-symbols-outlined text-[18px]">videocam</span>
+                      <span>View 3d Video</span>
                     </button>
                     <Dialog>
                       <div className="flex flex-col gap-3">
@@ -269,7 +270,7 @@ const Index: React.FC = () => {
                           href={buildWhatsAppUrl("The Solo")}
                           target="_blank"
                           rel="noreferrer"
-                          className="w-full rounded-sm border border-primary bg-primary py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+                          className="w-full rounded-sm border border-emerald-600 bg-emerald-600 py-3 text-sm font-medium text-emerald-50 transition-colors hover:bg-emerald-700"
                         >
                           <div className="flex flex-col items-center leading-snug">
                             <span>Whatsapp</span>
@@ -280,7 +281,7 @@ const Index: React.FC = () => {
                           href={buildViberUrl("The Solo")}
                           target="_blank"
                           rel="noreferrer"
-                          className="w-full rounded-sm border border-secondary bg-secondary py-3 text-sm font-medium text-secondary-foreground transition-colors hover:bg-secondary/90"
+                          className="w-full rounded-sm border border-purple-600 bg-purple-600 py-3 text-sm font-medium text-purple-50 transition-colors hover:bg-purple-700"
                         >
                           <div className="flex flex-col items-center leading-snug">
                             <span>Viber</span>
@@ -473,8 +474,9 @@ const Index: React.FC = () => {
                       </span>
                       <span className="text-xs font-medium text-muted-foreground sm:text-sm">USD</span>
                     </div>
-                    <button className="w-full rounded-sm border border-accent bg-accent py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90">
-                      View 3d Video
+                    <button className="flex w-full items-center justify-center gap-2 rounded-sm border border-accent bg-accent py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90">
+                      <span className="material-symbols-outlined text-[18px]">videocam</span>
+                      <span>View 3d Video</span>
                     </button>
                     <Dialog>
                       <div className="flex flex-col gap-3">
@@ -482,7 +484,7 @@ const Index: React.FC = () => {
                           href={buildWhatsAppUrl("The Couple")}
                           target="_blank"
                           rel="noreferrer"
-                          className="w-full rounded-sm border border-primary bg-primary py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+                          className="w-full rounded-sm border border-emerald-600 bg-emerald-600 py-3 text-sm font-medium text-emerald-50 transition-colors hover:bg-emerald-700"
                         >
                           <div className="flex flex-col items-center leading-snug">
                             <span>Whatsapp</span>
@@ -493,7 +495,7 @@ const Index: React.FC = () => {
                           href={buildViberUrl("The Couple")}
                           target="_blank"
                           rel="noreferrer"
-                          className="w-full rounded-sm border border-secondary bg-secondary py-3 text-sm font-medium text-secondary-foreground transition-colors hover:bg-secondary/90"
+                          className="w-full rounded-sm border border-purple-600 bg-purple-600 py-3 text-sm font-medium text-purple-50 transition-colors hover:bg-purple-700"
                         >
                           <div className="flex flex-col items-center leading-snug">
                             <span>Viber</span>
@@ -683,8 +685,9 @@ const Index: React.FC = () => {
                       </span>
                       <span className="text-xs font-medium text-muted-foreground sm:text-sm">USD</span>
                     </div>
-                    <button className="w-full rounded-sm border border-accent bg-accent py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90">
-                      View 3d Video
+                    <button className="flex w-full items-center justify-center gap-2 rounded-sm border border-accent bg-accent py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90">
+                      <span className="material-symbols-outlined text-[18px]">videocam</span>
+                      <span>View 3d Video</span>
                     </button>
                     <Dialog>
                       <div className="flex flex-col gap-3">
@@ -692,7 +695,7 @@ const Index: React.FC = () => {
                           href={buildWhatsAppUrl("The Family")}
                           target="_blank"
                           rel="noreferrer"
-                          className="w-full rounded-sm border border-primary bg-primary py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+                          className="w-full rounded-sm border border-emerald-600 bg-emerald-600 py-3 text-sm font-medium text-emerald-50 transition-colors hover:bg-emerald-700"
                         >
                           <div className="flex flex-col items-center leading-snug">
                             <span>Whatsapp</span>
@@ -703,7 +706,7 @@ const Index: React.FC = () => {
                           href={buildViberUrl("The Family")}
                           target="_blank"
                           rel="noreferrer"
-                          className="w-full rounded-sm border border-secondary bg-secondary py-3 text-sm font-medium text-secondary-foreground transition-colors hover:bg-secondary/90"
+                          className="w-full rounded-sm border border-purple-600 bg-purple-600 py-3 text-sm font-medium text-purple-50 transition-colors hover:bg-purple-700"
                         >
                           <div className="flex flex-col items-center leading-snug">
                             <span>Viber</span>
