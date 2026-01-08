@@ -1034,7 +1034,7 @@ const Index: React.FC = () => {
                 Download Apk
               </button>
               <button className="hover-scale rounded-lg border border-primary-foreground/20 bg-foreground px-8 py-3 text-lg font-bold text-background shadow-lg transition-colors hover:bg-foreground/90">
-                Download on App Store
+                Google Play Store (coming soon)
               </button>
             </div>
           </div>
