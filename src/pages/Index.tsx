@@ -260,17 +260,17 @@ const Index: React.FC = () => {
                       </span>
                       <span className="text-xs font-medium text-muted-foreground sm:text-sm">USD</span>
                     </div>
-                    <button className="flex w-full items-center justify-center gap-2 rounded-lg bg-accent py-3 text-sm font-bold text-accent-foreground shadow-md transition-colors hover:bg-accent/90">
+                    <button className="flex w-full items-center justify-center gap-2 bg-accent py-3 text-sm font-bold text-accent-foreground shadow-md transition-colors hover:bg-accent/90">
                       <span className="material-symbols-outlined text-[20px]">videocam</span>
                       View 3D Video
                     </button>
                     <Dialog>
-                      <div className="flex flex-col gap-2">
+                      <div className="flex flex-col gap-3">
                         <a
                           href={buildWhatsAppUrl("The Solo")}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover-scale flex-1 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-md ring-1 ring-primary/60 transition-colors hover:bg-primary/95 hover:ring-primary"
+                          className="hover-scale flex-1 bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-md ring-1 ring-primary/60 transition-colors hover:bg-primary/95 hover:ring-primary"
                         >
                           <div className="flex items-center justify-between gap-3">
                             <div className="flex items-center gap-2">
@@ -284,7 +284,7 @@ const Index: React.FC = () => {
                           href={buildViberUrl("The Solo")}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover-scale flex-1 rounded-xl border border-accent/70 bg-muted px-4 py-3 text-sm font-semibold text-accent shadow-sm transition-colors hover:bg-accent/10 hover:border-accent"
+                          className="hover-scale flex-1 border border-accent/70 bg-muted px-4 py-3 text-sm font-semibold text-accent shadow-sm transition-colors hover:bg-accent/10 hover:border-accent"
                         >
                           <div className="flex items-center justify-between gap-3">
                             <div className="flex items-center gap-2">
@@ -294,12 +294,12 @@ const Index: React.FC = () => {
                             <span className="text-xs font-normal opacity-95">+95 9951343605</span>
                           </div>
                         </a>
+                        <DialogTrigger asChild>
+                          <button className="w-full border border-primary/60 bg-background py-4 text-sm font-bold text-primary transition-colors hover:bg-primary/5">
+                            Book online
+                          </button>
+                        </DialogTrigger>
                       </div>
-                      <DialogTrigger asChild>
-                        <button className="mt-2 w-full rounded-lg border border-primary/60 bg-background py-4 text-sm font-bold text-primary transition-colors hover:bg-primary/5">
-                          Book online
-                        </button>
-                      </DialogTrigger>
                       <DialogContent>
                         <DialogHeader>
                           <DialogTitle>Book The Solo</DialogTitle>
@@ -480,17 +480,17 @@ const Index: React.FC = () => {
                       </span>
                       <span className="text-xs font-medium text-muted-foreground sm:text-sm">USD</span>
                     </div>
-                    <button className="flex w-full items-center justify-center gap-2 rounded-lg bg-accent py-3 text-sm font-bold text-accent-foreground shadow-md transition-colors hover:bg-accent/90">
+                    <button className="flex w-full items-center justify-center gap-2 bg-accent py-3 text-sm font-bold text-accent-foreground shadow-md transition-colors hover:bg-accent/90">
                       <span className="material-symbols-outlined text-[20px]">videocam</span>
                       View 3D Video
                     </button>
                     <Dialog>
-                      <div className="flex flex-col gap-2">
+                      <div className="flex flex-col gap-3">
                         <a
                           href={buildWhatsAppUrl("The Couple")}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover-scale flex-1 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-md ring-1 ring-primary/60 transition-colors hover:bg-primary/95 hover:ring-primary"
+                          className="hover-scale flex-1 bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-md ring-1 ring-primary/60 transition-colors hover:bg-primary/95 hover:ring-primary"
                         >
                           <div className="flex items-center justify-between gap-3">
                             <div className="flex items-center gap-2">
@@ -504,7 +504,7 @@ const Index: React.FC = () => {
                           href={buildViberUrl("The Couple")}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover-scale flex-1 rounded-xl border border-accent/70 bg-muted px-4 py-3 text-sm font-semibold text-accent shadow-sm transition-colors hover:bg-accent/10 hover:border-accent"
+                          className="hover-scale flex-1 border border-accent/70 bg-muted px-4 py-3 text-sm font-semibold text-accent shadow-sm transition-colors hover:bg-accent/10 hover:border-accent"
                         >
                           <div className="flex items-center justify-between gap-3">
                             <div className="flex items-center gap-2">
@@ -514,12 +514,12 @@ const Index: React.FC = () => {
                             <span className="text-xs font-normal opacity-95">+95 9951343605</span>
                           </div>
                         </a>
+                        <DialogTrigger asChild>
+                          <button className="w-full border border-primary/60 bg-background py-4 text-sm font-bold text-primary transition-colors hover:bg-primary/5">
+                            Book online
+                          </button>
+                        </DialogTrigger>
                       </div>
-                       <DialogTrigger asChild>
-                        <button className="mt-2 w-full rounded-lg border border-primary/60 bg-background py-4 text-sm font-bold text-primary transition-colors hover:bg-primary/5">
-                          Book online
-                        </button>
-                       </DialogTrigger>
                       <DialogContent>
                         <DialogHeader>
                           <DialogTitle>Book The Couple</DialogTitle>
@@ -697,17 +697,17 @@ const Index: React.FC = () => {
                       </span>
                       <span className="text-xs font-medium text-muted-foreground sm:text-sm">USD</span>
                     </div>
-                    <button className="flex w-full items-center justify-center gap-2 rounded-lg bg-accent py-3 text-sm font-bold text-accent-foreground shadow-md transition-colors hover:bg-accent/90">
+                    <button className="flex w-full items-center justify-center gap-2 bg-accent py-3 text-sm font-bold text-accent-foreground shadow-md transition-colors hover:bg-accent/90">
                       <span className="material-symbols-outlined text-[20px]">videocam</span>
                       View 3D Video
                     </button>
                     <Dialog>
-                      <div className="flex flex-col gap-2">
+                      <div className="flex flex-col gap-3">
                         <a
                           href={buildWhatsAppUrl("The Family")}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover-scale flex-1 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-md ring-1 ring-primary/60 transition-colors hover:bg-primary/95 hover:ring-primary"
+                          className="hover-scale flex-1 bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-md ring-1 ring-primary/60 transition-colors hover:bg-primary/95 hover:ring-primary"
                         >
                           <div className="flex items-center justify-between gap-3">
                             <div className="flex items-center gap-2">
@@ -721,7 +721,7 @@ const Index: React.FC = () => {
                           href={buildViberUrl("The Family")}
                           target="_blank"
                           rel="noreferrer"
-                          className="hover-scale flex-1 rounded-xl border border-accent/70 bg-muted px-4 py-3 text-sm font-semibold text-accent shadow-sm transition-colors hover:bg-accent/10 hover:border-accent"
+                          className="hover-scale flex-1 border border-accent/70 bg-muted px-4 py-3 text-sm font-semibold text-accent shadow-sm transition-colors hover:bg-accent/10 hover:border-accent"
                         >
                           <div className="flex items-center justify-between gap-3">
                             <div className="flex items-center gap-2">
@@ -731,12 +731,12 @@ const Index: React.FC = () => {
                             <span className="text-xs font-normal opacity-95">+95 9951343605</span>
                           </div>
                         </a>
+                        <DialogTrigger asChild>
+                          <button className="w-full border border-primary/60 bg-background py-4 text-sm font-bold text-primary transition-colors hover:bg-primary/5">
+                            Book online
+                          </button>
+                        </DialogTrigger>
                       </div>
-                       <DialogTrigger asChild>
-                         <button className="mt-2 w-full rounded-lg border border-primary/60 bg-background py-4 text-sm font-bold text-primary transition-colors hover:bg-primary/5">
-                           Book online
-                         </button>
-                       </DialogTrigger>
                       <DialogContent>
                         <DialogHeader>
                           <DialogTitle>Book The Family</DialogTitle>
