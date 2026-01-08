@@ -1031,7 +1031,7 @@ const Index: React.FC = () => {
             </p>
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
               <button className="hover-scale rounded-lg bg-background px-8 py-3 text-lg font-bold text-foreground shadow-lg transition-colors hover:bg-muted">
-                Get it on Google Play
+                Download Apk
               </button>
               <button className="hover-scale rounded-lg border border-primary-foreground/20 bg-foreground px-8 py-3 text-lg font-bold text-background shadow-lg transition-colors hover:bg-foreground/90">
                 Download on App Store
