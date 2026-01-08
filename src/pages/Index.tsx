@@ -10,6 +10,13 @@ const Index: React.FC = () => {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  const WHATSAPP_NUMBER = "6593805126"; // GoTech WhatsApp
+
+  const buildWhatsAppUrl = (modelName: string) => {
+    const message = `Hi, I am interested in booking the "${modelName}" modular unit.`;
+    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  };
+
   const goToSlide = (index: number) => {
     setCurrentSlide((index + heroSlides.length) % heroSlides.length);
   };
@@ -245,9 +252,14 @@ const Index: React.FC = () => {
                       <span className="material-symbols-outlined text-[20px]">videocam</span>
                       View 3D Video
                     </button>
-                    <button className="w-full rounded-lg bg-foreground py-3 text-sm font-bold text-background transition-colors hover:bg-primary">
+                    <a
+                      href={buildWhatsAppUrl("The Solo")}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="w-full rounded-lg bg-foreground py-3 text-center text-sm font-bold text-background transition-colors hover:bg-primary"
+                    >
                       Book Now
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -343,9 +355,14 @@ const Index: React.FC = () => {
                       <span className="material-symbols-outlined text-[20px]">videocam</span>
                       View 3D Video
                     </button>
-                    <button className="w-full rounded-lg bg-foreground py-3 text-sm font-bold text-background shadow-md transition-colors hover:bg-primary">
+                    <a
+                      href={buildWhatsAppUrl("The Couple")}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="w-full rounded-lg bg-foreground py-3 text-center text-sm font-bold text-background shadow-md transition-colors hover:bg-primary"
+                    >
                       Book Now
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -438,9 +455,14 @@ const Index: React.FC = () => {
                       <span className="material-symbols-outlined text-[20px]">videocam</span>
                       View 3D Video
                     </button>
-                    <button className="w-full rounded-lg bg-foreground py-3 text-sm font-bold text-background transition-colors hover:bg-primary">
+                    <a
+                      href={buildWhatsAppUrl("The Family")}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="w-full rounded-lg bg-foreground py-3 text-center text-sm font-bold text-background transition-colors hover:bg-primary"
+                    >
                       Book Now
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
