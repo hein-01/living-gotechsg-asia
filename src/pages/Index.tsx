@@ -67,7 +67,7 @@ const Index: React.FC = () => {
         </header>
 
         {/* Hero Section with background carousel-style images */}
-        <section className="relative flex min-h-[600px] flex-col items-center justify-center overflow-hidden px-4 py-12 md:px-20 lg:px-40">
+        <section className="relative flex min-h-[420px] flex-col items-center justify-center overflow-hidden px-4 py-10 md:px-20 lg:px-40">
           <div
             className="absolute inset-0 z-0 flex h-full w-full transition-transform duration-700 ease-out"
             style={{ transform: `translateX(-${currentSlide * 100}%)` }}
