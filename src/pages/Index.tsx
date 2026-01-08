@@ -933,11 +933,12 @@ const Index: React.FC = () => {
         </section>
 
         {/* Benefits / Promise Section */}
-        <section className="bg-card px-4 py-16 md:px-20 lg:px-40">
+        <section className="bg-card/80 px-4 py-16 md:px-20 lg:px-40">
           <div className="mx-auto max-w-[1100px]">
             <div className="mb-10 text-center md:text-left">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary/80">
-                Why GoTech?</p>
+              <p className="animate-fade-in text-xs font-semibold uppercase tracking-[0.2em] text-primary/80">
+                Why GoTech?
+              </p>
               <h2 className="mt-3 text-3xl font-bold leading-tight tracking-[-0.02em] text-foreground md:text-4xl">
                 Cooler, faster and stronger homes for modern living.
               </h2>
@@ -949,7 +950,7 @@ const Index: React.FC = () => {
 
             <div className="grid gap-6 md:grid-cols-[1.2fr,1fr] md:items-center">
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <div className="rounded-2xl border border-border bg-muted/40 p-5 shadow-sm">
+                <div className="hover-scale animate-fade-in rounded-2xl border border-border bg-background/80 p-5 shadow-sm transition-all hover:border-primary/40 hover:shadow-md">
                   <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
                     <span className="material-symbols-outlined text-base">thermostat</span>
                     <span>Thermal comfort</span>
@@ -960,7 +961,7 @@ const Index: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="rounded-2xl border border-border bg-muted/40 p-5 shadow-sm">
+                <div className="hover-scale animate-fade-in rounded-2xl border border-border bg-background/80 p-5 shadow-sm transition-all hover:border-primary/40 hover:shadow-md">
                   <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
                     <span className="material-symbols-outlined text-base">bolt</span>
                     <span>Fast build</span>
@@ -971,7 +972,7 @@ const Index: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="rounded-2xl border border-border bg-muted/40 p-5 shadow-sm">
+                <div className="hover-scale animate-fade-in rounded-2xl border border-border bg-background/80 p-5 shadow-sm transition-all hover:border-primary/40 hover:shadow-md">
                   <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
                     <span className="material-symbols-outlined text-base">shield</span>
                     <span>Built to last</span>
@@ -982,7 +983,7 @@ const Index: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="rounded-2xl border border-border bg-muted/40 p-5 shadow-sm">
+                <div className="hover-scale animate-fade-in rounded-2xl border border-border bg-background/80 p-5 shadow-sm transition-all hover:border-primary/40 hover:shadow-md">
                   <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
                     <span className="material-symbols-outlined text-base">savings</span>
                     <span>Smart value</span>
@@ -994,7 +995,7 @@ const Index: React.FC = () => {
                 </div>
               </div>
 
-              <div className="mt-4 space-y-4 rounded-3xl bg-background/80 p-6 shadow-xl ring-1 ring-border/60 md:mt-0">
+              <div className="mt-4 space-y-4 rounded-3xl bg-gradient-to-br from-background to-muted/70 p-6 shadow-xl ring-1 ring-border/60 md:mt-0 md:translate-y-2 md:animate-fade-in">
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-primary/80">
                   Engineered, not improvised
                 </p>
