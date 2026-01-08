@@ -292,7 +292,7 @@ const Index: React.FC = () => {
                         </a>
                       </div>
                       <DialogTrigger asChild>
-                        <button className="mt-2 w-full rounded-lg border border-primary/60 bg-background py-3 text-sm font-bold text-primary transition-colors hover:bg-primary/5">
+                        <button className="mt-2 w-full rounded-lg border border-primary/60 bg-background py-4 text-sm font-bold text-primary transition-colors hover:bg-primary/5">
                           Book online
                         </button>
                       </DialogTrigger>
@@ -509,11 +509,11 @@ const Index: React.FC = () => {
                           </div>
                         </a>
                       </div>
-                      <DialogTrigger asChild>
-                        <button className="mt-2 w-full rounded-lg border border-primary/60 bg-background py-3 text-sm font-bold text-primary transition-colors hover:bg-primary/5">
+                       <DialogTrigger asChild>
+                        <button className="mt-2 w-full rounded-lg border border-primary/60 bg-background py-4 text-sm font-bold text-primary transition-colors hover:bg-primary/5">
                           Book online
                         </button>
-                      </DialogTrigger>
+                       </DialogTrigger>
                       <DialogContent>
                         <DialogHeader>
                           <DialogTitle>Book The Couple</DialogTitle>
@@ -724,11 +724,11 @@ const Index: React.FC = () => {
                           </div>
                         </a>
                       </div>
-                      <DialogTrigger asChild>
-                        <button className="mt-2 w-full rounded-lg border border-primary/60 bg-background py-3 text-sm font-bold text-primary transition-colors hover:bg-primary/5">
-                          Book online
-                        </button>
-                      </DialogTrigger>
+                       <DialogTrigger asChild>
+                         <button className="mt-2 w-full rounded-lg border border-primary/60 bg-background py-4 text-sm font-bold text-primary transition-colors hover:bg-primary/5">
+                           Book online
+                         </button>
+                       </DialogTrigger>
                       <DialogContent>
                         <DialogHeader>
                           <DialogTitle>Book The Family</DialogTitle>
